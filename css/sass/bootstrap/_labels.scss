@@ -1,0 +1,302 @@
+//
+// Labels
+// --------------------------------------------------
+
+.label {
+  display: inline;
+  padding: .2em .4em .3em;
+  font-size: 80%;
+  font-weight: lighter;
+  line-height: 1;
+  color: $label-color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+
+  // [converter] extracted a& to a.label
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+  
+  /*
+   * @author binggg
+   * @version 2014-06-07
+   * 
+   * edit from
+   * http://github.com/jlukic/semantic-ui/
+   * Copyright 2013 Contributors
+   * Released under the MIT license
+   * http://opensource.org/licenses/MIT
+   * 
+   */
+  
+  /* Inside Link */
+  a {
+    cursor: pointer;
+    color: $label-color;
+    text-decoration: none;
+    @include opacity(0.8); 
+    @include transition(opacity 0.2s ease);
+    &:hover {
+    @include opacity(1);
+    
+    }
+  }
+  
+  /* Detail */
+  .detail {
+    display: inline-block;
+    margin-left: 0.5em;
+    font-weight: bold;
+    @include opacity(0.8);
+  }
+  
+  /* Icon */
+  .fa {
+    width: auto;
+	  /* Removable label */
+	  &.fa-times {
+		cursor: pointer;
+		margin: 0em 0em 0em 0.5em;
+		@include opacity(0.7);
+		@include transition(background 0.1s linear);
+		&:hover {
+		  @include opacity(0.99);
+		}
+	  }
+  }
+	/* Image */
+	&.image {
+		width: auto !important;
+		margin-top: 0em;
+		margin-right: 1em;
+		margin-bottom: 0em;
+		padding-top: 0.4em;
+		padding-bottom: 0.4em;
+		line-height: 1.5em;
+		vertical-align: baseline;
+		text-transform: none;
+		-webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+		img {
+	  	display: inline-block;
+		  height: 2.0em;
+		  margin: 0em 0.8em -0.4em -0.25em;
+		  vertical-align: top;
+		  border-radius: 0.25em 0em 0em 0.25em;
+		}
+	}
+  /*-------------------
+         Ribbon
+  --------------------*/
+  
+  &.ribbon {
+    position: relative;
+    margin: 0.7em 0;
+    left: -2*$panel-body-padding;
+    padding:0.7em 0.7em 0.7em 2*$panel-body-padding;
+    border-radius: 0px 4px 4px 0px;
+  
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  &.ribbon:after {
+    position: absolute;
+    content: "";
+  
+    top: 100%;
+    left: 0%;
+  
+    border-top: 0em solid transparent;
+    border-right-width: $panel-body-padding;
+    border-right-color: inherit;
+    border-right-style: solid;
+    border-bottom: $panel-body-padding solid transparent;
+    border-left: 0em solid transparent;
+  
+    width: 0em;
+    height: 0em;
+  }
+  
+  /*-------------------
+         Attached
+  --------------------*/
+  
+  &.top.attached,
+  &.attached {
+    width: 100%;
+    position: absolute;
+    margin: 0em;
+    top: 0em;
+    left: 0em;
+  
+    padding: 0.75em 1em;
+    border-radius: $panel-border-radius $panel-border-radius 0 0;
+  }
+  &.bottom.attached {
+    top: auto;
+    bottom: 0em;
+    border-radius: 0em 0em $panel-border-radius $panel-border-radius;
+  }
+  
+  &.top.left.attached {
+    width: auto;
+    margin-top: 0em !important;
+    border-radius: $panel-border-radius 0em $panel-border-radius 0em;
+  }
+  
+  &.top.right.attached {
+    width: auto;
+    left: auto;
+    right: 0em;
+    border-radius: 0em $panel-border-radius 0em $panel-border-radius;
+  }
+  &.bottom.left.attached {
+    width: auto;
+    top: auto;
+    bottom: 0em;
+    border-radius: 0 $panel-border-radius 0 $panel-border-radius;
+  }
+  &.bottom.right.attached {
+    top: auto;
+    bottom: 0em;
+    left: auto;
+    right: 0em;
+    width: auto;
+    border-radius: $panel-border-radius 0 $panel-border-radius 0;
+  }
+  
+  /*-------------------
+      Corner Label
+  --------------------*/
+  
+  &.corner {
+    background-color: transparent;
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    z-index: 10;
+    margin: 0em;
+  
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+  
+    text-align: center;
+    @include transition(color 0.2s ease);
+    &:after {
+      position: absolute;
+      content: "";
+      right: 0em;
+      top: 0em;
+      z-index: -1;
+    
+      width: 0em;
+      height: 0em;
+    
+      border-top: 0em solid transparent;
+      border-right: 3em solid transparent;
+      border-bottom: 3em solid transparent;
+      border-left: 0em solid transparent;
+    
+      border-right-color: inherit;
+    
+      @include transition(border-color 0.2s ease);
+    }
+    
+    .fa {
+      font-size: 0.875em;
+      margin: 0.5em 0em 0em 1.25em;
+    }
+    .text {
+      display: inline-block;
+      font-weight: bold;
+    
+      margin: 0.5em 0em 0em 1em;
+      width: 2.5em;
+      font-size: 0.875em;
+    
+      text-align: center;
+      @include rotate(45deg);
+    }
+    /* Left Corner */
+    &.left,
+    &.left:after {
+      right: auto;
+      left: 0em;
+    }
+    &.left:after {
+      border-top: 3em solid transparent;
+      border-right: 3em solid transparent;
+      border-bottom: 0em solid transparent;
+      border-left: 0em solid transparent;
+      border-top-color: inherit;
+    }
+    &.left .fa {
+      margin: 0.5em 0em 0em -1em;
+    }
+    &.left .text {
+      margin: 0.5em 0em 0em -1em;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+// Add hover effects, but only for links
+a.label {
+  &:hover,
+  &:focus {
+    color: $label-link-hover-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-default {
+  @extend .label;
+  @include label-variant($label-default-bg);
+}
+
+.label-primary {
+  @extend .label;
+  @include label-variant($label-primary-bg);
+}
+
+.label-success {
+  @extend .label;
+  @include label-variant($label-success-bg);
+}
+
+.label-info {
+  @extend .label;
+  @include label-variant($label-info-bg);
+}
+
+.label-warning {
+  @extend .label;
+  @include label-variant($label-warning-bg);
+}
+
+.label-danger {
+  @extend .label;
+  @include label-variant($label-danger-bg);
+}
+
+

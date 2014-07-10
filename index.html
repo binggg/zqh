@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+Remove this if you use the .htaccess -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>赚钱花</title>
+<meta name="description" content=""/>
+<meta name="generator" content="Studio 3 http://aptana.com/"/>
+<meta name="author" content="zhao"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+<link rel="shortcut icon" href="favicon.png"/>
+<link rel="apple-touch-icon" href="iTunesArtwork.png"/>
+<link href="css/screen2.css" type="text/css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- 引入fullpage js -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+
+<script src="js/jquery1.11.1.min.js">
+</script>
+<!-- This following line is needed in case of using the default easing option or when using another
+one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="js/jquery.easings.min.js">
+</script>
+<!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
+<script type="text/javascript" src="js/jquery.slimscroll.min.js">
+</script>
+<script type="text/javascript" src="js/jquery.fullPage.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+<style>
+
+/* Common styles
+* --------------------------------------- */
+img {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+.section {
+    text-align: center;
+    overflow: hidden;
+}
+
+.wrap {
+    position: relative;
+    height: 100%;
+}
+
+.box {
+    text-align: left;
+    color: #808080;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* Section 0*/
+/** --------------------------------------- */
+
+/* Section 1*/
+/** --------------------------------------- */
+/*#section1 img {*/
+/*position: absolute;*/
+/*left: 40px;*/
+/*top: 100px;*/
+/*}*/
+
+/*#section1 .box {*/
+/*position: absolute;*/
+/*top: 50%;*/
+/*left: 50%;*/
+/*margin-top: -192px;*/
+/*margin-left: 89px;*/
+/*width: 395px;*/
+/*z-index: 1;*/
+/*}*/
+
+/*#section1 .imagesContainer {*/
+/*display: block;*/
+/*position: absolute;*/
+/*z-index: 1;*/
+/*top: 42%;*/
+/*left: 58%;*/
+/*margin-top: -325px;*/
+/*margin-left: -747px;*/
+/*width: 800px;*/
+/*height: 696px;*/
+/*}*/
+
+/*#section1 img {*/
+/*height: 100%;*/
+/*}*/
+
+/*screen resolutions between 620px and 800px*/
+/*@media all and (min-width: 620px) and (max-width: 800px) {*/
+/*#section1 .imagesContainer {*/
+/*margin-top: -278px;*/
+/*margin-left: -685px;*/
+/*width: 647px;*/
+/*height: 563px;*/
+/*}*/
+/*}*/
+
+/*screen resolutions lower than 620px*/
+/*@media all and (max-width: 620px) {*/
+/*#section1 .imagesContainer {*/
+/*margin-top: -208px;*/
+/*margin-left: -516px;*/
+/*width: 534px;*/
+/*height: 464px;*/
+/*}*/
+/*}*/
+
+/*#iphone2 {*/
+/*z-index: 10;*/
+/*}*/
+
+/*#iphone2.active {*/
+/*-webkit-transform: translate3d(-134px, 0px, 0px);*/
+/*-moz-transform: translate3d(-134px, 0px, 0px);*/
+/*-ms-transform: translate3d(-134px, 0px, 0px);*/
+/*transform: translate3d(-134px, 0px, 0px);*/
+/*}*/
+
+/*#iphone3 {*/
+/*z-index: 12;*/
+/*}*/
+
+/*#iphone3.active {*/
+/*-webkit-transform: translate3d(213px, 0px, 0px);*/
+/*-moz-transform: translate3d(213px, 0px, 0px);*/
+/*-ms-transform: translate3d(213px, 0px, 0px);*/
+/*transform: translate3d(213px, 0px, 0px);*/
+/*}*/
+
+/*#iphone4 {*/
+/*z-index: 11;*/
+/*left: 140px;*/
+/*}*/
+
+/*#iphone4.active {*/
+/*-webkit-transform: translate3d(548px, 0px, 0px);*/
+/*-moz-transform: translate3d(548px, 0px, 0px);*/
+/*-ms-transform: translate3d(548px, 0px, 0px);*/
+/*transform: translate3d(548px, 0px, 0px);*/
+/*}*/
+
+/* Section 2*/
+/** --------------------------------------- */
+/*#section2 img {*/
+/*position: absolute;*/
+/*}*/
+
+/*#section2 .imagesContainer, #staticImg .imagesContainer, #section3 .imagesContainer {*/
+/*position: absolute;*/
+/*z-index: 1;*/
+/*left: 50%;*/
+/*display: block;*/
+/*margin-top: -288px;*/
+/*margin-left: -636px;*/
+/*width: 0;*/
+/*height: 0;*/
+
+/*-webkit-transition: all 1.2s ease-in-out;*/
+/*-moz-transition: all 1.2s ease-in-out;*/
+/*-o-transition: all 1.2s ease-in-out;*/
+/*transition: all 1.2s ease-in-out;*/
+/*}*/
+
+/*#section2.moveUp .imagesContainer {*/
+/*top: 50%;*/
+/*}*/
+
+/*#section2.moveDown .imagesContainer, #staticImg .imagesContainer {*/
+/*top: 90%;*/
+/*}*/
+
+/*#section2.active .imagesContainer {*/
+/*top: 50%;*/
+/*}*/
+
+/*#section2 .box {*/
+/*top: 22%;*/
+/*left: 42%;*/
+/*position: absolute;*/
+/*width: 582px;*/
+/*}*/
+
+/*#iphone-yellow {*/
+/*top: -35px;*/
+/*left: -222px;*/
+/*}*/
+
+/*#iphone-red {*/
+/*top: -194px;*/
+/*left: 106px;*/
+/*}*/
+
+/*#iphone-blue {*/
+/*top: 320px;*/
+/*left: 448px;*/
+/*}*/
+
+/*#iphone-green {*/
+/*left: 106px;*/
+/*position: absolute;*/
+/*}*/
+
+/*#staticImg {*/
+/*display: block;*/
+/*position: absolute;*/
+/*z-index: 1;*/
+/*top: 200%;*/
+/*left: 0;*/
+/*width: 100%;*/
+/*min-width: 980px;*/
+/*height: 100%;*/
+
+/*-webkit-transition: all 0.7s ease-out;*/
+/*-moz-transition: all 0.7s ease-out;*/
+/*-o-transition: all 0.7s ease-out;*/
+/*transition: all 0.7s ease-out;*/
+/*}*/
+
+/*#staticImg.moveDown {*/
+/*top: 300%;*/
+/*}*/
+
+/*#staticImg.moveDown .imagesContainer {*/
+/*top: 50%;*/
+/*}*/
+
+/*#staticImg.moveDown img {*/
+/*top: 155px;*/
+/*}*/
+
+/*#staticImg.active .imagesContainer {*/
+/*top: 50%;*/
+/*}*/
+
+/*#staticImg.active img {*/
+/*top: 487px;*/
+/*}*/
+
+/* Section 3*/
+/** --------------------------------------- */
+/*#section3 .imagesContainer {*/
+/*top: 50%;*/
+/*}*/
+
+/*#section3 img {*/
+/*top: 155px;*/
+/*left: 455px;*/
+/*position: absolute;*/
+/*}*/
+
+/*#section3 .box {*/
+/*text-align: center;*/
+/*margin: 10% 0 0 0;*/
+/*}*/
+
+/* Overwriting fullPage.js tooltip color*/
+/** --------------------------------------- */
+/*.fullPage-tooltip {*/
+/*color: #AAA;*/
+/*}*/
+
+/*#fullPage-nav span, .fullPage-slidesNav span {*/
+/*border-color: #AAA;*/
+/*}*/
+
+/*#fullPage-nav li .active span, .fullPage-slidesNav .active span {*/
+/*background: #AAA;*/
+/*}*/
+
+</style>
+<script>
+    $(document).ready(function () {
+
+        $('#fullpage').fullpage({
+            'verticalCentered': false,
+            'css3': true,
+            'anchors': [],
+            'scrollingSpeed': 600,
+            'easing': 'easeInQuart',
+            'slidesColor': ['#fff', '#fff', '#fff', '#fff', '#f8f8f8'],
+            'navigation': true,
+            'navigationPosition': 'left',
+            'scrollOverflow': true,
+
+            'afterLoad': function (anchorLink, index) {
+                //浮动导航条展示
+                if (index == 1) {
+                    $('#Z_FixedNav').removeClass('show');
+                } else {
+                    $('#Z_FixedNav').addClass('show');
+                }
+                if (index == 2) {
+                    $('#iphone3, #iphone2, #iphone4').addClass('active');
+                }
+                //进入用户评价页面特效
+                if (index == 3) {
+                    $('#section2').addClass('act');
+                }
+                if (index == 4) {
+                    //下载页面进入特效
+                    $('.download-links a,.download-wrap').addClass('act');
+                    //下载页面时，隐藏浮动导航栏的下载按钮
+                    $('.download-link').hide();
+                } else {
+                    //非下载页面，显示下载按钮
+                    $('.download-link').show();
+                }
+                if (index == 6){
+                    $('#Z_AboutUs,.zqh-about-logo,.zqh-about-text').addClass('act');
+                }
+            },
+
+            'onLeave': function (index, newIndex, direction) {
+                if (index == 2 && direction == 'down') {
+                    $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
+                } else if (index == 3 && direction == 'up') {
+                    $('.section').eq(index - 1).removeClass('moveUp').addClass('moveDown');
+                }
+                //离开用户评价页面特效
+                if (index == 3) {
+                    $('#section2').removeClass('act');
+                }
+
+                if (index == 4) {
+                    //离开下载页面特效
+                    $('.download-links a,.download-wrap').removeClass('act');
+                }
+
+                if (index == 6) {
+                    $('#Z_AboutUs,.zqh-about-logo,.zqh-about-text').removeClass('act');
+                }
+
+                var staticImg = $('#staticImg');
+
+                staticImg.toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+                staticImg.toggleClass('moveDown', index == 3 && direction == 'down');
+            }
+
+        });
+        //浮动侧边栏
+        var Z_SidebarPanel = $('#Z_SidebarPanel');
+        Z_SidebarPanel.mouseover(function () {
+            $('#Z_SidebarPanel').css('right', '320px');
+        });
+
+        Z_SidebarPanel.mouseleave(function () {
+            $('#Z_SidebarPanel').css('right', '0px');
+        });
+        $('.app-link').click(function () {
+                    var link = $(this);
+                    $('iframe').attr('src', 'kitchen-sink/z-msg-list.html');
+                    return false;
+                }
+        );
+        //下载链接
+        $('.download-link').click(function () {
+            $.fn.fullpage.moveTo(5);
+            return false;
+        })
+    });
+</script>
+</head>
+<body>
+<div id="Z_SidebarPanel">
+    <div class="sidebar-panel-body">
+        <iframe src="kitchen-sink/index.html">
+        </iframe>
+    </div>
+    <a><i class="fa fa-user"></i> </a>
+    <a href="kitchen-sink/z-msg-list.html" class="app-link"><i class="fa fa-volume-up"></i><span class="badge">10</span></a>
+    <a><i class="fa fa-share-alt"></i> </a>
+    <a><i class="fa fa-qq"></i> </a>
+    <a><i class="fa fa-phone"></i> </a>
+    <a><i class="fa fa-weixin"></i> </a>
+    <a><i class="fa fa-question-circle"></i> </a>
+</div>
+<nav id="Z_FixedNav" class="navbar fixed-nav">
+    <div class="container">
+        <div class="navbar-header zqh-navbar-hd">
+            <a href="#">
+                <img class="pull-left" alt="赚钱花" src="images/logo.png">
+
+                <div class="pull-left text-center zqh-site-name">
+                    <p class="name text-zqh">
+                        赚钱花
+                    </p>
+                </div>
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right zqh-navbar-menu">
+            <li>
+                <a href="#" class="active">首页</a>
+            </li>
+            <li>
+                <a href="#section1">产品介绍</a>
+            </li>
+            <li>
+                <a href="#">推广赚钱</a>
+            </li>
+            <li>
+                <a href="#">会员中心</a>
+            </li>
+            <li>
+                <a href="#">关于我们</a>
+            </li>
+            <li class="with-btn">
+                <div>
+                    <a class="btn btn-primary btn-lg download-link" href="#Z_Download">立即下载</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="fullpage">
+<div class="section" id="section0">
+    <header id="Z_Header" class="zqh-header">
+        <nav id="Z_Navbar" class="navbar zqh-navbar">
+            <div class="container">
+                <div id="Z_NavbarHd" class="navbar-header zqh-navbar-hd">
+                    <a href="#">
+                        <img class="pull-left" alt="赚钱花" src="images/logo.png">
+
+                        <div id="Z_SiteName" class="pull-left text-center zqh-site-name">
+                            <p class="name text-zqh">
+                                赚钱花
+                            </p>
+
+                            <p class="slogan text-primary">
+                                SLOGAN HERE
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <ul id="Z_NavbarMenu" class="nav navbar-nav navbar-right zqh-navbar-menu">
+                    <li>
+                        <a href="#" class="active">首页</a>
+                    </li>
+                    <li>
+                        <a href="#section1">产品介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">推广赚钱</a>
+                    </li>
+                    <li>
+                        <a href="#">会员中心</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="Z_HdIntro" class="container zqh-hd-intro">
+            <h1>简单 易用
+                <br>随时随地赚钱</h1>
+            <a href="#Z_Download" class="zqh-hd-download btn btn-primary btn-lg download-link">
+                <i class="fa fa-arrow-circle-down fa-lg fa-fw"> </i>立即下载
+            </a>
+        </div>
+        <div class="text-center">
+            <a href="#section1"><i class="fa fa-angle-double-down fa-3x"></i></a>
+        </div>
+    </header>
+</div>
+<div id="section1" class="section text-center">
+    <div class="slide" id="feature1">
+        <div class="container">
+            <h2>产品介绍</h2>
+            <p class="en-text">Introduction</p>
+        </div>
+    </div>
+</div>
+<div class="section moveDown" id="section2">
+    <div class="slide" id="slide1">
+        <div class="review">
+            <h2>用户评价</h2>
+            <p class="en-text">Reviews</p>
+            <img class="pull-left img-circle" src="images/avatar1.jpg" alt="用户魔术师2">
+            <blockquote class="pull-left">
+                <p>
+                    很好，日赚5元还是可以的。<span class="pull-right text-primary"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                </p>
+                <small>评论人： 魔术师2  发表在 <cite title="iTunes">iTunes </cite></small>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="slide" id="slide2">
+        <div class="review">
+            <h2>用户评价</h2>
+            <p class="en-text">Reviews</p>
+            <img class="pull-left img-circle" src="images/avatar4.jpg" alt="用户魔术师2">
+            <blockquote class="pull-left">
+                <p>
+                    很好，日赚5元还是可以的。<span class="pull-right text-primary"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                </p>
+                <small>评论人： 魔术师2  发表在 <cite title="iTunes">iTunes </cite></small>
+            </blockquote>
+        </div>
+    </div>
+    <div class="slide" id="slide3">
+        <div class="review">
+            <h2>用户评价</h2>
+            <p class="en-text">Reviews</p>
+            <img class="pull-left img-circle" src="images/avatar2.jpg" alt="用户魔术师2">
+            <blockquote class="pull-left">
+                <p>
+                    很好，日赚5元还是可以的。<span class="pull-right text-primary"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                </p>
+                <small>评论人： 魔术师2  发表在 <cite title="iTunes">iTunes </cite></small>
+            </blockquote>
+        </div>
+    </div>
+</div>
+<div id="Z_Download" class="section">
+    <div class="download-links">
+        <div class="container download-wrap">
+            <h2><i class="fa fa-cloud-download"></i> 马上下载</h2>
+            <p class="en-text">Get Download!</p>
+            <p class="description lead">
+                开始你的手机赚钱之旅
+            </p>
+        </div>
+        <p>
+            <a class="btn btn-primary btn-lg left"
+               href="https://itunes.apple.com/app/strudel/id803167516?ls=1&amp;mt=8">
+                <i class="fa fa-apple fa-fw fa-2x"></i>下载苹果手机版本
+            </a>
+        </p>
+        <p>
+            <a class="btn btn-primary btn-lg right"
+               href="https://play.google.com/store/apps/details?id=com.getstrudel.android">
+                <i class="fa fa-android fa-fw fa-2x"></i>下载安卓手机版本
+            </a>
+        </p>
+    </div>
+</div>
+<div class="section moveDown" id="section4">
+    <h2>推广赚钱吧</h2>
+    <p class="en-text">Promotion</p>
+</div>
+<div class="section" id="section5">
+    <div id="Z_AboutUs" class="container text-center">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img class="img-responsive zqh-about-logo" src="images/iTunesArtwork.png" alt="赚钱花标志"/>
+            </div>
+            <div class="col-md-8 zqh-about-text">
+                <h2>关于赚钱花</h2>
+                <p class="en-text">About Zhuanqianhua</p>
+                <p class="lead">
+                    赚钱花，为泡橙科技出品的手机赚钱应用，分为iOS和安卓系统两个版本。其核心是打造一站式手机赚钱应用，让用户通过完成任务（下载体验软件等）、每日签到、邀请收徒等方式赚取现金奖励。并可以快捷地完成兑换提现等操作。让用户通过多种多样的方式，轻松获得收入。
+                </p>
+                <blockquote>
+                    <h3 class="text-primary">最靠谱的手机赚钱神器</h3>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <footer id="Z_Footer" class="text-left zqh-footer">
+        <div class="container">
+            <div id="Z_FooterMain" class="row">
+                <div class="col-md-5 text-right">
+                    <h3>支持</h3>
+                    <ul class="nav nav-pills pull-right" role="tablist">
+                        <li><a href="#"><i class="fa fa-fw fa-question fa-lg"></i> 常见问题</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-qq fa-lg"></i> 在线反馈</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-phone fa-lg"></i> 4008008000</a></li>
+                    </ul>
+                </div>
+                <!--<div id="Z_Top10" class="col-md-3 zqh-top10">-->
+                <!--<h3>收入排行</h3>-->
+                <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                <!--<span class="badge">1</span>-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading">流者-->
+                <!--<small>-->
+                <!--335.98元-->
+                <!--</small>-->
+                <!--</h4>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                <!--<span class="badge">2</span>-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading">流者-->
+                <!--<small>-->
+                <!--335.98元-->
+                <!--</small>-->
+                <!--</h4>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                <!--<span class="badge">3</span>-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading">流者-->
+                <!--<small class="pull-right">-->
+                <!--335.98元-->
+                <!--</small>-->
+                <!--</h4>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                <!--<span class="badge">4</span>-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading">流者-->
+                <!--<small>-->
+                <!--335.98元-->
+                <!--</small>-->
+                <!--</h4>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                <!--<span class="badge">5</span>-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading">流者-->
+                <!--<small>-->
+                <!--335.98元-->
+                <!--</small>-->
+                <!--</h4>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="col-md-2 text-center qr">
+                    <h3>关注</h3>
+                    <img src="http://www.zhuanqianhua.com/img/1387185598558.png" alt="二维码">
+                </div>
+                <div class="col-md-5 text-left">
+                    <h3>分享</h3>
+
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间"
+                                                                                                      href="#"
+                                                                                                      class="bds_qzone"
+                                                                                                      data-cmd="qzone"></a><a
+                            title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#"
+                                                                                               class="bds_tqq"
+                                                                                               data-cmd="tqq"></a><a
+                            title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#"
+                                                                                                class="bds_weixin"
+                                                                                                data-cmd="weixin"></a>
+                    </div>
+                    <script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "32"}, "share": {}};
+                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                </div>
+            </div>
+        </div>
+        <div id="Z_FooterBottom">
+            <div id="Z_FriendLink" class="container zqh-f-link">
+                <h3>合作伙伴</h3>
+                <p>
+                    <a href="http://www.mumayi.com/">木蚂蚁</a>
+                    <a href="http://www.appfun.cn/">安卓市场</a>
+                    <a href="http://www.eoemarket.com/">优亿市场</a>
+                    <a href="http://www.ruan8.com/">软吧手机软件</a>
+                    <a href="http://www.wandoujia.com/">豌豆荚</a>
+                    <a href="http://www.liqucn.com/">历趣网</a>
+                    <a href="http://www.51lala.com/">红包网</a>
+                    <a href="http://www.anzhuotui.com/">安卓推</a>
+                    <a href="http://www.51shouzhuan.com">我要手赚网</a>
+                    <a href="http://www.androidonline.net">安卓在线</a>
+                    <a href="http://www.xunzai.com/">绿色软件站</a>
+                    <a href="http://www.gezila.com/">软件下载</a>
+                    <a href="http://www.cnzz.cc/">站长之家</a>
+                    <a href="http://www.anzo&#8203;w.com">安卓软件园</a>
+                    <a href="http://www.7xz.com/">安卓网络游戏</a>
+                    <a href="http://android.gamepm.com"> 安卓游戏下载</a>
+                    <a href="http://baike.az4sd.com/"> 安卓百科</a>
+                    <a href="http://www.ishuaji.cn/"> 绿豆刷机</a>
+                    <a href="http://www.lecoo.com/"> 乐酷网</a>
+                    <a href="http://www.41717.cn/"> 好看的动漫</a>
+                    <a href="http://www.9ht.com/">下载软件 </a>
+                    <a href="http://bbs.kuaishuo.me">快说语音助手 </a>
+                    <a href="http://www.uujoy.com">手机电子书 </a>
+                    <a href="http://www.imobile.com.cn/">手机之家</a>
+                    <a href="http://cloud.workercn.cn//">中工云信</a>
+                    <a href="http://www.ikuyy.com/">酷YY软件</a>
+                    <a href="http://www.lvse.com/ruanjian/">绿色网</a>
+                    <a href="http://app.gunxueqiu.com/">滚雪球市场</a>
+                    <a href="http://www.girlwan.com/">女生市场</a>
+                    <a href="http://twan.cn/index.php?cid=39">天玩门户</a>
+                    <a href="http://www.9553.com">9553下载</a>
+                </p>
+            </div>
+            <p class="text-center">
+                Copyright &copy; 2014 深圳市泡橙科技有限公司 All rights reserved. 粤ICP备13062186号-3
+            </p>
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+</html>
