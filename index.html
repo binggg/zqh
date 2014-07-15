@@ -292,7 +292,7 @@ img {
             'anchors': [],
             'scrollingSpeed': 600,
             'easing': 'easeInQuart',
-            'slidesColor': ['#fff', '#fff', '#fff', '#fff', '#f8f8f8'],
+            'slidesColor': ['#fff', '#eee', '#fff', '#fff', '#000'],
             'navigation': true,
             'navigationPosition': 'left',
             'scrollOverflow': true,
@@ -305,6 +305,7 @@ img {
                     $('#Z_FixedNav').addClass('show');
                 }
                 if (index == 2) {
+                    $('.fe-icon,.fe-screen').addClass('act');
                     $('#iphone3, #iphone2, #iphone4').addClass('active');
                 }
                 //进入用户评价页面特效
@@ -331,6 +332,10 @@ img {
                 } else if (index == 3 && direction == 'up') {
                     $('.section').eq(index - 1).removeClass('moveUp').addClass('moveDown');
                 }
+                if (index == 2) {
+                    $('.fe-icon,.fe-screen').removeClass('act');
+                }
+
                 //离开用户评价页面特效
                 if (index == 3) {
                     $('#section2').removeClass('act');
@@ -367,9 +372,10 @@ img {
                     return false;
                 }
         );
-        //下载链接
-        $('.download-link').click(function () {
-            $.fn.fullpage.moveTo(5);
+        //链接
+        $('.scroll-link').click(function() {
+            var i = $(this).data('index');
+            $.fn.fullpage.moveTo(i);
             return false;
         })
     });
@@ -404,23 +410,23 @@ img {
         </div>
         <ul class="nav navbar-nav navbar-right zqh-navbar-menu">
             <li>
-                <a href="#" class="active">首页</a>
+                <a class="scroll-link" data-index="1" href="#" class="active">首页</a>
             </li>
             <li>
-                <a href="#section1">产品介绍</a>
+                <a class="scroll-link" data-index="2" href="#section1">产品介绍</a>
             </li>
             <li>
-                <a href="#">推广赚钱</a>
+                <a class="scroll-link" data-index="5"  href="#">推广赚钱</a>
+            </li>
+            <li>
+                <a class="scroll-link" data-index="6" href="#">关于我们</a>
             </li>
             <li>
                 <a href="#">会员中心</a>
             </li>
-            <li>
-                <a href="#">关于我们</a>
-            </li>
             <li class="with-btn">
                 <div>
-                    <a class="btn btn-primary btn-lg download-link" href="#Z_Download">立即下载</a>
+                    <a class="btn btn-primary btn-lg scroll-link" data-index="4">立即下载</a>
                 </div>
             </li>
         </ul>
@@ -448,19 +454,19 @@ img {
                 </div>
                 <ul id="Z_NavbarMenu" class="nav navbar-nav navbar-right zqh-navbar-menu">
                     <li>
-                        <a href="#" class="active">首页</a>
+                        <a class="scroll-link" data-index="1" class="active">首页</a>
                     </li>
                     <li>
-                        <a href="#section1">产品介绍</a>
+                        <a class="scroll-link" data-index="2" href="#">产品介绍</a>
                     </li>
                     <li>
-                        <a href="#">推广赚钱</a>
+                        <a class="scroll-link" data-index="5" href="#">推广赚钱</a>
                     </li>
                     <li>
                         <a href="#">会员中心</a>
                     </li>
                     <li>
-                        <a href="#">关于我们</a>
+                        <a class="scroll-link" data-index="6" href="#">关于我们</a>
                     </li>
                 </ul>
             </div>
@@ -468,7 +474,7 @@ img {
         <div id="Z_HdIntro" class="container zqh-hd-intro">
             <h1>简单 易用
                 <br>随时随地赚钱</h1>
-            <a href="#Z_Download" class="zqh-hd-download btn btn-primary btn-lg download-link">
+            <a href="#Z_Download" class="zqh-hd-download btn btn-primary btn-lg scroll-link" data-index="4">
                 <i class="fa fa-arrow-circle-down fa-lg fa-fw"> </i>立即下载
             </a>
         </div>
@@ -479,9 +485,29 @@ img {
 </div>
 <div id="section1" class="section text-center">
     <div class="slide" id="feature1">
-        <div class="container">
-            <h2>产品介绍</h2>
-            <p class="en-text">Introduction</p>
+           <div class="feature-main">
+               <img class="pull-left fe-screen" src="images/exchange_screen.png" alt="赚钱花软件兑换页面截图"/>
+               <div class="feature-intro">
+                   <img class="fe-title" src="images/exchange-title.png" alt="兑换最快5分钟到账，安全快捷，支持支付宝、话费、Q币">
+                   <p>
+                       <img class="fe-icon" src="images/exchange_alipay.png" alt="支付宝">
+                       <img class="fe-icon" src="images/exchange_fee.png" alt="话费">
+                       <img class="fe-icon" src="images/exchange_qb.png" alt="Q币">
+                   </p>
+               </div>
+           </div>
+    </div>
+    <div class="slide" id="feature2">
+        <div class="feature-main">
+            <img class="pull-left fe-screen" src="images/exchange_screen.png" alt="赚钱花软件兑换页面截图"/>
+            <div class="feature-intro">
+                <img class="fe-title" src="images/exchange-title.png" alt="兑换最快5分钟到账，安全快捷，支持支付宝、话费、Q币">
+                <p>
+                    <img class="fe-icon" src="images/exchange_alipay.png" alt="支付宝">
+                    <img class="fe-icon" src="images/exchange_fee.png" alt="话费">
+                    <img class="fe-icon" src="images/exchange_qb.png" alt="Q币">
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -529,6 +555,9 @@ img {
 </div>
 <div id="Z_Download" class="section">
     <div class="download-links">
+        <div class="download-nums">
+            <p>已有<strong>28596</strong>名用户</p>
+        </div>
         <div class="container download-wrap">
             <h2><i class="fa fa-cloud-download"></i> 马上下载</h2>
             <p class="en-text">Get Download!</p>
@@ -550,9 +579,19 @@ img {
         </p>
     </div>
 </div>
-<div class="section moveDown" id="section4">
-    <h2>推广赚钱吧</h2>
-    <p class="en-text">Promotion</p>
+<div class="section promotion" id="section4">
+    <div class="promo-bg"> </div>
+    <div class="main">
+        <h2>叫上小伙伴一起来赚钱</h2>
+        <p class="en-text">Promotion</p>
+        <p class="lead">成功邀请小伙伴作你的徒弟，马上奖励现金<strong class="text-primary">0.20</strong>元<br>徒弟下载第一个软件，再奖励<strong class="text-primary">0.30</strong>元，以后还可享受<strong class="text-primary">25%</strong>永久分成。</p>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="输入你的赚钱花ID">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="button">生成专属链接</button>
+      </span>
+            </div><!-- /input-group -->
+    </div>
 </div>
 <div class="section" id="section5">
     <div id="Z_AboutUs" class="container text-center">
