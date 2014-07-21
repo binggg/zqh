@@ -1,0 +1,176 @@
+//主色调
+$primary-color:#44B549;
+//辅助色
+$secend-color:#7cbae5;
+//提示色
+$warning-color:#E43B3E;
+//背景色
+$background-color:#e8e8e8;
+//内容区颜色
+$main-color:#fff;
+//字体
+$font: Helvetica Neue, Helvetica, Arial, "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
+.body-admin .badge {
+  background-color:  $warning-color;
+}
+
+body {
+  font-family: $font;
+}
+body {
+  padding-top: 50px;
+  background-color:$background-color;
+}
+
+.navbar-default {
+  border-bottom:2px solid $primary-color;
+}
+.admin-panel {
+  min-height: 834px;
+  background-color: $main-color;
+}
+
+.nav-inverse a {
+  color: #ccc;
+  background-color: darken($background-color,10%);
+}
+
+.nav-inverse li a:focus {
+  background-color:lighten($background-color,10%);
+}
+
+.nav-inverse li a:link, .nav-inverse li a:visited {
+  color: #333;
+}
+
+.nav-inverse > li li a {
+  background-color: $background-color;
+  &.active {
+    background-color: $primary-color;
+    color:$main-color;
+  }
+}
+.nav-inverse li p{
+  margin-left:17px;
+  color:#999;
+}
+
+.nav-inverse li a:visited {
+  background-color: $background-color;
+}
+
+.nav-inverse li a:hover, .nav-inverse li a:active {
+  color: $primary-color;
+  background-color:lighten($background-color,10%);
+}
+
+.sidebar-nav > li {
+  border-top:1px solid #ddd;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sidebar-nav  li li a {
+  padding-left: 45px;
+  color: #999;
+}
+
+.page-footer {
+  padding-top: 50px;
+}
+
+.search-input {
+  background-color: #666;
+  border-color: #666;
+  color: #fff;
+}
+
+.search-input:focus {
+  border-color: rgba(150,150,150,0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+  outline: 0 none;
+}
+
+.dashbord-home .btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/**
+ * add
+ */
+#pfile {
+  float: left;
+}
+.zw_img_size {
+  height: 120px;
+}
+
+.zb_img_wrap {
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  background-color: #ccc;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.zb_img_wrap img {
+
+}
+
+.remove {
+  position: absolute;
+  right: 0px;
+  padding: 0 8px;
+  top: -2px;
+  font-size: 20px;
+  color: #fff;
+  background: #000000;
+  cursor: pointer;
+  float: left;
+}
+
+.remove2 {
+  bottom: 12px;
+  color: #666666;
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  padding: 0 8px;
+  position: absolute;
+  right: 6px;
+}
+
+.file-box {
+  position: relative;
+}
+
+.files {
+  position: absolute;
+  top: 0;
+  width: 71px;
+  height: 34px;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.zw_buseinessimg_show {
+
+}
+
+.goods_add_buseiness {
+  position: relative;
+}
+
+.small-pic {
+  width: 100px;
+  min-height: 100px;
+}

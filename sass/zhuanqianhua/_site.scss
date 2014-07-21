@@ -1,9 +1,8 @@
 @charset "utf-8";
+@import "compass";
+
 //变量定义
 //--------------------------------------------
-
-//颜色
-
 //默认颜色
 $primary-color: #f6484c;
 //默认颜色，带透明度
@@ -16,27 +15,27 @@ $selection-bg: $primary-color-alpha;
 $zqh-navbar-menu-link-color: #fff;
 //首屏导航条hover颜色
 $zqh-navbar-menu-hover-color: #fff;
-//fullpage.js 相关
-.controlArrow {
-  &.prev {
-    left:80px!important;
-  }
-  &.next {
-    right:80px!important;
-  }
-}
-
-
 //字体
-
 $zqh-font: Helvetica Neue, Helvetica, Arial, "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
-//字体大小
+//下载页面顶部补白
+$download-padding-top: 30%;
+//下载按钮宽度
+$download-btn-width: 300px;
+//标题字体大小
 h2 {
-  font-size:48px!important;
+  font-size: 48px !important;
+  font-family:msyhl55658!important;
+  text-shadow: 0px 1px 1px #000;
 }
+
+.hand-write {
+  font-family:hywxingshuzt55921;
+  padding-top:30px;
+}
+
 .en-text {
-  font-size:12px;
-  color:$primary-color;
+  font-size: 12px;
+  color: $primary-color;
   line-height: 48px;
   letter-spacing: 4px;
 }
@@ -57,88 +56,17 @@ body {
   font-family: $zqh-font;
 }
 
-//首页头部
-//---------------------------------------------
-.zqh-header {
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-  background-position: top;
-  min-height: 100%;
-  //头部底部区域
-  footer {
-    padding-top: 60px;
-    a {
-      color: #fff;
-      display: inline-block;
-      padding-top: 5px;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid #fff;
-    }
-  }
-  //头部介绍区域
-  .zqh-hd-intro {
-    text-align: right;
-    color: #fff;
-    position: relative;
-    height: 700px;
-    h1 {
-      margin-top: 50px;
-      font-size: 52px;
-      font-weight: 300;
-    }
-    //头部下载按钮
-    .zqh-hd-download {
-      position: absolute;
-      right: 0;
-      height: 60px;
-      padding: 0 45px 0 35px;
-      font-size: 24px;
-      line-height: 60px;
-      border-radius: 30px;
-      border: none;
-      bottom: 0;
-    }
-  }
-}
-
-//特性页面
-#section1 {
-  .slide {
-    .feature-main {
-      left: 50%;
-      top:50%;
-      position: relative;
-      width:1000px;
-      height:437px;
-      margin-left: -400px;
-      margin-top:-218px;
-      .fe-icon {
-        padding:0;
-        &.act {
-          padding:20px;
-        }
-      }
-      .fe-title {
-        padding-top:65px;
-      }
-      .fe-screen {
-        position: absolute;
-        left:-200px;
-        &.act {
-          left:-75px;
-        }
-      }
-    }
-
-  }
-}
 //导航条及浮动导航条
 //----------------------------------------
+#Z_Navbar {
+  @include background-image(linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)));
+  border: none;
+  text-shadow: 0px 1px 1px #000;
+}
+
 .zqh-navbar, .fixed-nav {
   padding: 30px 0;
-  height: 120px;
+  height: 150px;
   overflow: hidden;
   .zqh-site-name {
     margin-left: 30px;
@@ -214,7 +142,7 @@ body {
   }
   li {
     a {
-      color: #999 !important;
+      color: #666 !important;
     }
     &.with-btn {
       a {
@@ -228,12 +156,113 @@ body {
   }
 }
 
+//NO.1 头部
+//---------------------------------------------
+.zqh-header {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  //头部底部区域
+  footer {
+    padding-top: 60px;
+    a {
+      color: #fff;
+      display: inline-block;
+      padding-top: 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  }
+  .zqh-hd-wrap {
+    position: relative;
 
-//用户评价页面
+  }
+  //头部介绍区域
+  .zqh-hd-intro {
+    text-align: right;
+    color: #fff;
+    h1 {
+      margin-top: 50px;
+      font-size: 52px;
+      font-weight: 300;
+      font-family:msyhl55658!important;
+      text-shadow: 0px 1px 1px #000;
+    }
+    //头部下载按钮
+    .zqh-hd-download {
+      position: absolute;
+      right: 0;
+      height: 60px;
+      padding: 0 45px 0 35px;
+      font-size: 24px;
+      line-height: 60px;
+      border-radius: 30px;
+      border: none;
+      top: 214px;
+    }
+  }
+}
+
+//NO.2 介绍页面
+//-----------------------------------------------
+#section1 {
+  background-image: url(../images/tiny_grid.png);
+  .slide {
+    .feature-main {
+      left: 50%;
+      top: 50%;
+      position: relative;
+      width: 1000px;
+      height: 437px;
+      margin-left: -400px;
+      margin-top: -218px;
+      .fe-icon {
+        padding: 0;
+        margin-right: -1000px;
+        margin-bottom: -1000px;
+        @include transition(all 2s .5s ease-out);
+        @include scale(2.0);
+        &.act {
+          padding: 20px;
+          margin-right: 10px;
+          margin-bottom:10px;
+          @include scale(1.0);
+        }
+      }
+      .feature-intro {
+        padding-top: 65px;
+        margin-left:-500px;
+        @include opacity(0);
+        @include transition(all 0.7s 1s ease-out);
+        &.act {
+          @include opacity(1);
+          margin-left:10px;
+        }
+      }
+
+      .fe-screen {
+        position: absolute;
+        margin-top:-1900px;
+        left: -75px;
+        &.act {
+          margin-top:0px;
+          left: -75px;
+        }
+      }
+    }
+
+  }
+}
+
+//NO.3 用户评价页面
+//-------------------------------------------------------
 #section2 {
-  background: url(../images/review-bg.jpg) no-repeat;
+  background: url(../images/review-bg.png) no-repeat,url(../images/tiny_grid.png);
   background-position: center 500px;
-  transition:background-position 1s ease;
+  transition: background-position 1s ease;
   &.act {
     background-position: center center;
   }
@@ -247,17 +276,17 @@ body {
     position: relative;
     top: 50%;
     h2 {
-      color:#fff;
+      color: #fff;
     }
     > img {
-      width:90px;
-      height:90px;
+      width: 90px;
+      height: 90px;
     }
     blockquote {
       background: none repeat scroll 0 0 #fff;
       border: medium none;
       border-radius: 20px;
-      width:640px;
+      width: 640px;
       margin-left: 30px;
       padding: 30px;
       position: relative;
@@ -277,29 +306,52 @@ body {
   }
 }
 
-//下载页面顶部补白
-$download-padding-top: 30%;
-//下载按钮宽度
-$download-btn-width: 300px;
-//首页下载页面
+//NO.4 下载页面
+//--------------------------------------------------------
+
+@keyframes mymove {
+  100% {
+    background-position: -2000px -2000px;
+  }
+}
+
+@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+  100% {
+    background-position: -2000px -2000px;
+  }
+}
+
 #Z_Download {
+  background-image: url(../images/stardust.png);
+  animation: mymove 60s infinite linear;
+  -webkit-animation: mymove 60s infinite linear; /*Safari and Chrome*/
+  color: #fff;
   .download-links {
     .download-nums {
       position: absolute;
-      bottom:50px;
-      text-align:center;
-      width:100%;
-      color: #f8f8f8;
-      p{
-        font-size:100px;
+      bottom: 0px;
+      text-align: center;
+      width: 100%;
+      background:url(../images/earth.png) center bottom no-repeat;
+      height:223px;
+      p {
+        margin-top:100px;
+        font-size: 20px;
+        color:rgba(255,255,255,.3);
         & strong {
-          font-size:200px;
+          font-size: 50px;
         }
       }
     }
+    .satellite {
+      position: absolute;
+      bottom:220px;
+      right:0;
+    }
     .download-wrap {
       position: absolute;
-      top: 90px;
+      top: -500px;
       text-align: center;
       width: 100%;
       @include transition(all 1s);
@@ -332,83 +384,90 @@ $download-btn-width: 300px;
     }
   }
 }
-//推广页面
+
+//NO.5 推广页面
+//---------------------------------------------------------
 .promotion {
+  background: url(../images/xiaohuoban_aero.jpg) center center no-repeat;
   .promo-bg {
-    width:100%;
-    height:100%;
-    @include opacity(0.5);
-    background: url(../images/xiaohuoban.jpg) center center no-repeat;
-    background-attachment: cover;
+    width: 100%;
+    height: 100%;
+    background: url(../images/pattern.png);
+    transition: all 20s ease;
+
+    &.act {
+
+    }
   }
   .main {
     position: absolute;
-    width:1000px;
-    height:400px;
-    top:50%;
-    left:50%;
-    margin-top:-200px;
-    margin-left:-500px;
-    color:#fff;
+    width: 1000px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -500px;
+    color: #fff;
     h2 {
-      color:#fff !important;
+      color: #fff !important;
     }
     .input-group-lg {
-      width:600px;
-      margin-left:200px;
+      width: 600px;
+      margin-left: 200px;
+    }
+    .promo-well {
+      background: rgba(0, 0, 0, .3);
+      width: 600px;
+      margin-left: 200px;
+      color: #fff;
+      transition: all 1s ease;
+      margin-top: 25px;
+      border:1px solid rgba(199,199,199,.5);
+      font-size:16px!important;
+      &:hover {
+        background: rgba(0, 0, 0, .6);
+      }
     }
   }
 }
 
-
-//友情链接
-.zqh-f-link {
-  a {
-    padding: 5px;
-    width: 120px;
-    color: #666;
-    display: inline-block;
-  }
+//N0.6 关于我们
+//--------------------------------------------------
+#section5 {
+  background: url(../images/bg-light.jpg);
 }
-
-//赚钱花特性
-.zqh-features {
-  color: #666;
-  h2 {
-    line-height: 90px;
-    font-size: 40px;
-  }
-  p {
-    line-height: 30px;
-  }
-}
-
-//关于我们
 #Z_AboutUs {
   padding: 120px 0 30px;
   transition: all 1s ease;
-//  .zqh-about-logo {
-//    padding: 50px;
-//    transform: perspective(129px) rotateX(1deg) rotateY(-10deg);
-//    transform-origin: 100% 50% 0px;
-//    &.act {
-//      transform: none;
-//    }
-//  }
-//  .zqh-about-text {
-//    transform: perspective(129px) rotateX(1deg) rotateY(-10deg);
-//    transform-origin: 0% 50% 0px;
-//    transition: all 1s ease;
-//    &.act {
-//      transform:none;
-//    }
-//  }
+  //  .zqh-about-logo {
+  //    padding: 50px;
+  //    transform: perspective(129px) rotateX(1deg) rotateY(-10deg);
+  //    transform-origin: 100% 50% 0px;
+  //    &.act {
+  //      transform: none;
+  //    }
+  //  }
+  //  .zqh-about-text {
+  //    transform: perspective(129px) rotateX(1deg) rotateY(-10deg);
+  //    transform-origin: 0% 50% 0px;
+  //    transition: all 1s ease;
+  //    &.act {
+  //      transform:none;
+  //    }
+  //  }
+  .zqh-about-logo {
+    padding: 100px;
+  }
 }
 
 //底部
 .zqh-footer {
-  background: #eee;
-  color: #666;
+  background: url(../images/bg-dark.png);
+  color: #fff;
+  margin-left:-10px;
+  margin-right:-10px;
+  border-top:3px $primary-color solid;
+  box-shadow: inset 0px 0px 15px $primary-color-alpha;
   .zqh-top10 {
     .badge {
       background-color: $primary-color-alpha;
@@ -421,21 +480,54 @@ $download-btn-width: 300px;
   }
 }
 
+//友情链接
+//
+.zqh-f-link {
+  a {
+    padding: 5px;
+    width: 120px;
+    color: #666;
+    display: inline-block;
+  }
+}
+
 #Z_FooterMain {
+  > div {
+    height:200px;
+    border:#222 1px solid;
+    h3 {
+      background:url(../images/pattern.png);
+    }
+    a {
+      color:#eee;
+      &:hover,&:active,&:focus{
+        border-radius: 3px;
+        background-color: $primary-color;
+        box-shadow:0px 0px 15px $primary-color-alpha;
+      }
+    }
+  }
   padding: 15px;
   h3 {
     margin-bottom: 50px;
   }
   .qr {
     h3 {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 90px;
     }
   }
 }
 
 #Z_FooterBottom {
-  color: #999;
-  padding: 15px 0;
+  color: #666;
+  .zqh-copy {
+    margin-top:15px;
+    border-top:1px solid #222;
+    padding:15px 0;
+  }
 }
 
 //浮动侧边栏
@@ -482,4 +574,25 @@ $download-btn-width: 300px;
       left: 20px;
     }
   }
+}
+
+//fullpage.js 相关
+//--------------------------------------------------------
+.controlArrow {
+  &.prev {
+    left: 80px !important;
+  }
+  &.next {
+    right: 80px !important;
+  }
+}
+
+#fullPage-nav span,
+.fullPage-slidesNav span {
+  border-color: $primary-color-alpha !important;
+}
+
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+  background: $primary-color !important;
 }

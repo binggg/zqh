@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap不支持IE的兼容模式，让IE浏览器运行最新的渲染模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>微信聚合管理后台</title>
+    <link href="css/wechat.css" rel="stylesheet">
+    <!-- IE6-10 -->
+    <link rel="shortcut icon" href="https://res.wx.qq.com/mpres/htmledition/images/favicon1e5b3a.ico">
+    <script src="js/jquery-1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- 为 IE6-8 以及其它不支持 CSS3 Media Queries 的浏览器提供媒体查询 -->
+    <script src="js/respond.js"></script>
+</head>
+<body class="body-admin">
+<!-- 页面的头部 -->
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <i class="fa fa-weixin fa-lg text-primary"></i> 微信聚合管理后台
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li>
+                    <a href="" title="新增用户"> <i class="fa fa-user fa-lg"></i> <span class="badge">484</span></a>
+                </li>
+                <li>
+                    <a href="" title="新增供应商"> <i class="fa fa-group fa-lg"></i> <span class="badge">19</span></a>
+                </li>
+                <li>
+                    <a href="" title="新增产品"> <i class="fa fa-truck fa-lg"></i> <span class="badge">512</span></a>
+                </li>
+                <li>
+                    <a href="" title="新增订单"> <i class="fa fa-gavel fa-lg"></i> <span class="badge">1024</span></a>
+                </li> -->
+                <li class="droplist">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 kxaadmin <b class="caret"></b>
+                    </a><ul class="dropdown-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                </a><li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                </a><a href="#" class="w_cDeleteUser">暂无登出<i class="glyphicon glyphicon-log-out"></i></a>
+                </li>
+                </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div class="row main-bg">
+<div class="col-md-2 row">
+    <ul class="sidebar-nav nav nav-inverse" id="sidebar">
+        <li>
+            <p><i class="fa fa-truck fa-fw fa-lg"></i> 产品</p>
+            <ul class="nav" id="product">
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/index/id/dai">待审核产品</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/index/id/all">所有产品</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/index/id/desc">热卖产品</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/index/id/hei">产品回收站</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/type">产品分类</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/product/spec">产品规格</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><i class="fa fa-truck fa-fw fa-lg"></i> 产品</p>
+            <ul class="nav " id="gift">
+                <li>
+                    <a href="http://w.kuxiai.com/admin/gift/index">活动礼品</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/gift/type">活动(奖品)类型</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><i class="fa fa-truck fa-fw fa-lg"></i> 产品</p>
+            <ul class="nav " id="order">
+                <li>
+                    <a class="active" href="http://w.kuxiai.com/admin/order/index/id/today">当日订单</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/order/index/id/all">所有订单</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/order/index/id/upaid">未付款订单</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><i class="fa fa-truck fa-fw fa-lg"></i> 产品</p>
+            <ul class="nav " id="user">
+                <li>
+                    <a href="http://w.kuxiai.com/admin/user/index/id/dai">待审核微商</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/user/index/id/all">所有微商</a>
+                </li>
+                <!-- <li>
+                    <a href="/admin/user/index/id/desc">微商排行榜</a>
+                </li> -->
+                <li>
+                    <a href="http://w.kuxiai.com/admin/user/index/id/hei">微商黑名单</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/user/active">微商活跃度</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p><i class="fa fa-truck fa-fw fa-lg"></i> 产品</p>
+            <ul class="nav collapse" id="vendor">
+                <li>
+                    <a href="http://w.kuxiai.com/admin/vendor/index/id/dai">待审核供应商</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/vendor/index/id/all">所有供应商</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/vendor/index/id/desc">供应商排行榜</a>
+                </li>
+                <li>
+                    <a href="http://w.kuxiai.com/admin/vendor/index/id/hei">供应商黑名单</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-md-10 admin-panel row">
+    <div class="panel-body">
+        <div class="dashbord-home">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="btn btn-success btn-block">
+                    <i class="fa fa-5x hidden-xs fa-user pull-left"></i>
+                    <h5>总微商</h5>
+                    <h2 class="ngetCountUser">29</h2>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="btn btn-warning btn-block">
+                    <i class="fa fa-5x hidden-xs fa-group pull-left"></i>
+                    <h5>总供应商</h5>
+                    <h2 class="ngetCountVendor">6</h2>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="btn btn-info btn-block">
+                    <i class="fa fa-5x hidden-xs fa-truck pull-left"></i>
+                    <h5>总产品数</h5>
+                    <h2 class="ngetCountProduct">18</h2>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="btn btn-warning btn-block">
+                    <i class="fa fa-5x hidden-xs fa-gavel pull-left"></i>
+                    <h5>总订单</h5>
+                    <h2 class="ngetCountOrder">29</h2>
+                </a>
+            </div>
+            <span class="clearfix"></span>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">微商数据</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="lead">今日数据</p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">新增微商</h5>
+                            <h2 class="nNewuser">0</h2>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">禁用微商</h5>
+                            <h2 class="nBlackuser">0</h2>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">累计微商</h5>
+                            <h2 class="ngetCountUser">29</h2>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr><th>日期</th>
+                        <th>新增微商</th>
+                        <th>禁用微商</th>
+                        <!-- <th>7天 累计微商</th> -->
+                    </tr></thead>
+                    <tbody class="aAetUserlog7">
+                    <tr><td>2014-05-28</td><td>1</td><td>0</td></tr><tr><td>2014-05-27</td><td>1</td><td>0</td></tr><tr><td>2014-05-26</td><td>2</td><td>0</td></tr><tr><td>2014-05-24</td><td>1</td><td>1</td></tr><tr><td>2014-05-22</td><td>10</td><td>0</td></tr><tr><td>2014-05-13</td><td>3</td><td>0</td></tr><tr><td>2014-05-10</td><td>4</td><td>0</td></tr></tbody>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">供应商数据</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p class="lead">今日数据</p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">新增供应商</h5>
+                            <h2 class="nNewVendor">0</h2>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">禁用供应商</h5>
+                            <h2 class="nBlackVendor">0</h2>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-muted">累计供应商</h5>
+                            <h2 class="ngetCountVendor">6</h2>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr><th>日期</th>
+                        <th>新增供应商</th>
+                        <th>禁用供应商</th>
+                        <!-- <th>7天 累计供应商</th> -->
+                    </tr></thead>
+                    <tbody class="aAetVendorlog7">
+
+                    <tr><td>2014-05-13</td><td>1</td><td>0</td></tr><tr><td>2014-05-12</td><td>2</td><td>0</td></tr><tr><td>2014-04-08</td><td>1</td><td>0</td></tr><tr><td>2014-04-04</td><td>1</td><td>0</td></tr><tr><td>2014-03-14</td><td>1</td><td>0</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+<!-- 页面的脚部 -->
+<footer class="page-footer">
+    <div class="panel-body">
+        <div class="text-muted text-left">
+            © 2014 微信聚合管理后台 All rights reserved.
+            <br>
+            版权所有
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    //导航栏当前页面高亮显示
+    $(document).ready(function(){
+        highLight(3);
+    });
+
+    var highLight = function(number){
+        var _url = document.location.toString();
+        var _arr = _url.split('/');
+        var _len = _arr.length
+        var _newurl = ''
+        for (var i=number; i < _len; i++) {
+            _newurl += '/' + _arr[i]
+        };
+        console.log(_newurl);
+        if (_url.match('/')) {
+            //根目录展现
+            $('#' +_arr[number+1]).collapse('show');
+            //高亮当前的页面（不够完善）
+            // $("#sidebar [href='"+ _newurl +"']").css({'background':'darkorange','color':'#fff'});
+        }
+    }
+    // $(function(){
+    // 	$('img').each(function(){
+    // 		var _val = $(this).attr('src'), img = new Image();
+    // 		img.src = _val;
+    // 		if(img.width == 0){
+    // 			$(this).attr('src', '/images/e2.gif')
+    // 		}
+    // 	})
+    // })
+</script>
+</body></html>
