@@ -4934,7 +4934,7 @@ tbody.collapse.in {
     padding: 0.7em 0.7em 0.7em 30px;
     border-radius: 0px 4px 4px 0px;
     border-color: rgba(0, 0, 0, 0.15); }
-  /* line 112, ../sass/bootstrap/_labels.scss */
+  /* line 113, ../sass/bootstrap/_labels.scss */
   .label.ribbon:after, .ribbon.label-default:after, .ribbon.label-primary:after, .ribbon.label-success:after, .ribbon.label-info:after, .ribbon.label-warning:after, .ribbon.label-danger:after {
     position: absolute;
     content: "";
@@ -4948,7 +4948,7 @@ tbody.collapse.in {
     border-left: 0em solid transparent;
     width: 0em;
     height: 0em; }
-  /* line 135, ../sass/bootstrap/_labels.scss */
+  /* line 136, ../sass/bootstrap/_labels.scss */
   .label.top.attached, .top.attached.label-default, .top.attached.label-primary, .top.attached.label-success, .top.attached.label-info, .top.attached.label-warning, .top.attached.label-danger, .label.attached, .attached.label-default, .attached.label-primary, .attached.label-success, .attached.label-info, .attached.label-warning, .attached.label-danger {
     width: 100%;
     position: absolute;
@@ -4957,29 +4957,29 @@ tbody.collapse.in {
     left: 0em;
     padding: 0.75em 1em;
     border-radius: 4px 4px 0 0; }
-  /* line 145, ../sass/bootstrap/_labels.scss */
+  /* line 146, ../sass/bootstrap/_labels.scss */
   .label.bottom.attached, .bottom.attached.label-default, .bottom.attached.label-primary, .bottom.attached.label-success, .bottom.attached.label-info, .bottom.attached.label-warning, .bottom.attached.label-danger {
     top: auto;
     bottom: 0em;
     border-radius: 0em 0em 4px 4px; }
-  /* line 151, ../sass/bootstrap/_labels.scss */
+  /* line 152, ../sass/bootstrap/_labels.scss */
   .label.top.left.attached, .top.left.attached.label-default, .top.left.attached.label-primary, .top.left.attached.label-success, .top.left.attached.label-info, .top.left.attached.label-warning, .top.left.attached.label-danger {
     width: auto;
     margin-top: 0em !important;
     border-radius: 4px 0em 4px 0em; }
-  /* line 157, ../sass/bootstrap/_labels.scss */
+  /* line 158, ../sass/bootstrap/_labels.scss */
   .label.top.right.attached, .top.right.attached.label-default, .top.right.attached.label-primary, .top.right.attached.label-success, .top.right.attached.label-info, .top.right.attached.label-warning, .top.right.attached.label-danger {
     width: auto;
     left: auto;
     right: 0em;
     border-radius: 0em 4px 0em 4px; }
-  /* line 163, ../sass/bootstrap/_labels.scss */
+  /* line 164, ../sass/bootstrap/_labels.scss */
   .label.bottom.left.attached, .bottom.left.attached.label-default, .bottom.left.attached.label-primary, .bottom.left.attached.label-success, .bottom.left.attached.label-info, .bottom.left.attached.label-warning, .bottom.left.attached.label-danger {
     width: auto;
     top: auto;
     bottom: 0em;
     border-radius: 0 4px 0 4px; }
-  /* line 169, ../sass/bootstrap/_labels.scss */
+  /* line 170, ../sass/bootstrap/_labels.scss */
   .label.bottom.right.attached, .bottom.right.attached.label-default, .bottom.right.attached.label-primary, .bottom.right.attached.label-success, .bottom.right.attached.label-info, .bottom.right.attached.label-warning, .bottom.right.attached.label-danger {
     top: auto;
     bottom: 0em;
@@ -4987,7 +4987,7 @@ tbody.collapse.in {
     right: 0em;
     width: auto;
     border-radius: 4px 0 4px 0; }
-  /* line 182, ../sass/bootstrap/_labels.scss */
+  /* line 183, ../sass/bootstrap/_labels.scss */
   .label.corner, .corner.label-default, .corner.label-primary, .corner.label-success, .corner.label-info, .corner.label-warning, .corner.label-danger {
     background-color: transparent;
     position: absolute;
@@ -5003,7 +5003,7 @@ tbody.collapse.in {
     -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
     /* Left Corner */ }
-    /* line 196, ../sass/bootstrap/_labels.scss */
+    /* line 197, ../sass/bootstrap/_labels.scss */
     .label.corner:after, .corner.label-default:after, .corner.label-primary:after, .corner.label-success:after, .corner.label-info:after, .corner.label-warning:after, .corner.label-danger:after {
       position: absolute;
       content: "";
@@ -5020,11 +5020,11 @@ tbody.collapse.in {
       -webkit-transition: border-color 0.2s ease;
       -o-transition: border-color 0.2s ease;
       transition: border-color 0.2s ease; }
-    /* line 216, ../sass/bootstrap/_labels.scss */
+    /* line 217, ../sass/bootstrap/_labels.scss */
     .label.corner .fa, .corner.label-default .fa, .corner.label-primary .fa, .corner.label-success .fa, .corner.label-info .fa, .corner.label-warning .fa, .corner.label-danger .fa {
       font-size: 0.875em;
       margin: 0.5em 0em 0em 1.25em; }
-    /* line 220, ../sass/bootstrap/_labels.scss */
+    /* line 221, ../sass/bootstrap/_labels.scss */
     .label.corner .text, .corner.label-default .text, .corner.label-primary .text, .corner.label-success .text, .corner.label-info .text, .corner.label-warning .text, .corner.label-danger .text {
       display: inline-block;
       font-weight: bold;
@@ -5036,21 +5036,21 @@ tbody.collapse.in {
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg); }
-    /* line 233, ../sass/bootstrap/_labels.scss */
+    /* line 234, ../sass/bootstrap/_labels.scss */
     .label.corner.left, .corner.left.label-default, .corner.left.label-primary, .corner.left.label-success, .corner.left.label-info, .corner.left.label-warning, .corner.left.label-danger, .label.corner.left:after, .corner.left.label-default:after, .corner.left.label-primary:after, .corner.left.label-success:after, .corner.left.label-info:after, .corner.left.label-warning:after, .corner.left.label-danger:after {
       right: auto;
       left: 0em; }
-    /* line 237, ../sass/bootstrap/_labels.scss */
+    /* line 238, ../sass/bootstrap/_labels.scss */
     .label.corner.left:after, .corner.left.label-default:after, .corner.left.label-primary:after, .corner.left.label-success:after, .corner.left.label-info:after, .corner.left.label-warning:after, .corner.left.label-danger:after {
       border-top: 3em solid transparent;
       border-right: 3em solid transparent;
       border-bottom: 0em solid transparent;
       border-left: 0em solid transparent;
       border-top-color: inherit; }
-    /* line 244, ../sass/bootstrap/_labels.scss */
+    /* line 245, ../sass/bootstrap/_labels.scss */
     .label.corner.left .fa, .corner.left.label-default .fa, .corner.left.label-primary .fa, .corner.left.label-success .fa, .corner.left.label-info .fa, .corner.left.label-warning .fa, .corner.left.label-danger .fa {
       margin: 0.5em 0em 0em -1em; }
-    /* line 247, ../sass/bootstrap/_labels.scss */
+    /* line 248, ../sass/bootstrap/_labels.scss */
     .label.corner.left .text, .corner.left.label-default .text, .corner.left.label-primary .text, .corner.left.label-success .text, .corner.left.label-info .text, .corner.left.label-warning .text, .corner.left.label-danger .text {
       margin: 0.5em 0em 0em -1em;
       -webkit-transform: rotate(-45deg);
@@ -5058,13 +5058,13 @@ tbody.collapse.in {
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
-/* line 260, ../sass/bootstrap/_labels.scss */
+/* line 261, ../sass/bootstrap/_labels.scss */
 a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hover, a.label-info:hover, a.label-warning:hover, a.label-danger:hover, a.label:focus, a.label-default:focus, a.label-primary:focus, a.label-success:focus, a.label-info:focus, a.label-warning:focus, a.label-danger:focus {
   color: white;
   text-decoration: none;
   cursor: pointer; }
 
-/* line 272, ../sass/bootstrap/_labels.scss */
+/* line 273, ../sass/bootstrap/_labels.scss */
 .label-default {
   background-color: #999999;
   border-color: gray !important; }
@@ -5072,7 +5072,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-default[href]:hover, .label-default[href]:focus {
     background-color: gray; }
 
-/* line 277, ../sass/bootstrap/_labels.scss */
+/* line 278, ../sass/bootstrap/_labels.scss */
 .label-primary {
   background-color: #f6484c;
   border-color: #f4171c !important; }
@@ -5080,7 +5080,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-primary[href]:hover, .label-primary[href]:focus {
     background-color: #f4171c; }
 
-/* line 282, ../sass/bootstrap/_labels.scss */
+/* line 283, ../sass/bootstrap/_labels.scss */
 .label-success {
   background-color: #5cb85c;
   border-color: #449d44 !important; }
@@ -5088,7 +5088,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-success[href]:hover, .label-success[href]:focus {
     background-color: #449d44; }
 
-/* line 287, ../sass/bootstrap/_labels.scss */
+/* line 288, ../sass/bootstrap/_labels.scss */
 .label-info {
   background-color: #5bc0de;
   border-color: #31b0d5 !important; }
@@ -5096,7 +5096,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-info[href]:hover, .label-info[href]:focus {
     background-color: #31b0d5; }
 
-/* line 292, ../sass/bootstrap/_labels.scss */
+/* line 293, ../sass/bootstrap/_labels.scss */
 .label-warning {
   background-color: #f0ad4e;
   border-color: #ec971f !important; }
@@ -5104,7 +5104,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-warning[href]:hover, .label-warning[href]:focus {
     background-color: #ec971f; }
 
-/* line 297, ../sass/bootstrap/_labels.scss */
+/* line 298, ../sass/bootstrap/_labels.scss */
 .label-danger {
   background-color: #d9534f;
   border-color: #c9302c !important; }
@@ -9107,34 +9107,43 @@ h2 {
   font-size: 48px !important;
   font-family: msyhl55658 !important;
   text-shadow: 0px 1px 1px #000; }
+  /* line 29, ../sass/zhuanqianhua/_site.scss */
+  h2 b {
+    color: #f6484c;
+    font-size: 120px;
+    font-weight: lighter; }
 
-/* line 31, ../sass/zhuanqianhua/_site.scss */
+/* line 37, ../sass/zhuanqianhua/_site.scss */
+img:hover {
+  box-shadow: 0px 0px 15px rgba(254, 80, 77, 0.9); }
+
+/* line 42, ../sass/zhuanqianhua/_site.scss */
 .hand-write {
   font-family: hywxingshuzt55921;
   padding-top: 30px; }
 
-/* line 36, ../sass/zhuanqianhua/_site.scss */
+/* line 47, ../sass/zhuanqianhua/_site.scss */
 .en-text {
   font-size: 12px;
   color: #f6484c;
   line-height: 48px;
   letter-spacing: 4px; }
 
-/* line 45, ../sass/zhuanqianhua/_site.scss */
+/* line 56, ../sass/zhuanqianhua/_site.scss */
 ::selection {
   color: white;
   background: rgba(254, 80, 77, 0.9); }
 
-/* line 50, ../sass/zhuanqianhua/_site.scss */
+/* line 61, ../sass/zhuanqianhua/_site.scss */
 ::-moz-selection {
   color: white;
   background: rgba(254, 80, 77, 0.9); }
 
-/* line 55, ../sass/zhuanqianhua/_site.scss */
+/* line 66, ../sass/zhuanqianhua/_site.scss */
 body {
   font-family: Helvetica Neue, Helvetica, Arial, "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu; }
 
-/* line 61, ../sass/zhuanqianhua/_site.scss */
+/* line 72, ../sass/zhuanqianhua/_site.scss */
 #Z_Navbar {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
@@ -9144,25 +9153,25 @@ body {
   border: none;
   text-shadow: 0px 1px 1px #000; }
 
-/* line 67, ../sass/zhuanqianhua/_site.scss */
+/* line 78, ../sass/zhuanqianhua/_site.scss */
 .zqh-navbar, .fixed-nav {
   padding: 30px 0;
   height: 150px;
   overflow: hidden; }
-  /* line 71, ../sass/zhuanqianhua/_site.scss */
+  /* line 82, ../sass/zhuanqianhua/_site.scss */
   .zqh-navbar .zqh-site-name, .fixed-nav .zqh-site-name {
     margin-left: 30px;
     text-decoration: none; }
-    /* line 73, ../sass/zhuanqianhua/_site.scss */
+    /* line 84, ../sass/zhuanqianhua/_site.scss */
     .zqh-navbar .zqh-site-name .name, .fixed-nav .zqh-site-name .name {
       font-size: 30px;
       padding: 0;
       line-height: 30px;
       color: #000; }
-    /* line 79, ../sass/zhuanqianhua/_site.scss */
+    /* line 90, ../sass/zhuanqianhua/_site.scss */
     .zqh-navbar .zqh-site-name .slogan, .fixed-nav .zqh-site-name .slogan {
       font-size: 24px; }
-  /* line 87, ../sass/zhuanqianhua/_site.scss */
+  /* line 98, ../sass/zhuanqianhua/_site.scss */
   .zqh-navbar .zqh-navbar-menu li > a, .fixed-nav .zqh-navbar-menu li > a {
     color: white;
     line-height: 30px;
@@ -9172,7 +9181,7 @@ body {
     margin: 0 15px 0 0;
     text-align: center;
     border-color: rgba(254, 80, 77, 0.9); }
-    /* line 96, ../sass/zhuanqianhua/_site.scss */
+    /* line 107, ../sass/zhuanqianhua/_site.scss */
     .zqh-navbar .zqh-navbar-menu li > a:hover, .zqh-navbar .zqh-navbar-menu li > a:active, .zqh-navbar .zqh-navbar-menu li > a.active, .fixed-nav .zqh-navbar-menu li > a:hover, .fixed-nav .zqh-navbar-menu li > a:active, .fixed-nav .zqh-navbar-menu li > a.active {
       background: none;
       border-bottom: 6px solid rgba(254, 80, 77, 0.9);
@@ -9182,12 +9191,12 @@ body {
       -moz-transition: color 0.5s, border 0.2s;
       -o-transition: color 0.5s, border 0.2s;
       transition: color 0.5s, border 0.2s; }
-    /* line 103, ../sass/zhuanqianhua/_site.scss */
+    /* line 114, ../sass/zhuanqianhua/_site.scss */
     .zqh-navbar .zqh-navbar-menu li > a:focus, .fixed-nav .zqh-navbar-menu li > a:focus {
       background: none;
       outline: none; }
 
-/* line 113, ../sass/zhuanqianhua/_site.scss */
+/* line 124, ../sass/zhuanqianhua/_site.scss */
 .fixed-nav {
   position: fixed;
   display: none;
@@ -9196,29 +9205,29 @@ body {
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
   z-index: 18; }
-  /* line 122, ../sass/zhuanqianhua/_site.scss */
+  /* line 133, ../sass/zhuanqianhua/_site.scss */
   .fixed-nav.show {
     display: block; }
-  /* line 126, ../sass/zhuanqianhua/_site.scss */
+  /* line 137, ../sass/zhuanqianhua/_site.scss */
   .fixed-nav img {
     width: 50px;
     margin: 20px; }
-  /* line 131, ../sass/zhuanqianhua/_site.scss */
+  /* line 142, ../sass/zhuanqianhua/_site.scss */
   .fixed-nav .zqh-site-name {
     margin: -15px 0 0 0; }
-    /* line 133, ../sass/zhuanqianhua/_site.scss */
+    /* line 144, ../sass/zhuanqianhua/_site.scss */
     .fixed-nav .zqh-site-name .name {
       font-size: 30px;
       padding: 0;
       line-height: 90px;
       color: #000; }
-    /* line 139, ../sass/zhuanqianhua/_site.scss */
+    /* line 150, ../sass/zhuanqianhua/_site.scss */
     .fixed-nav .zqh-site-name .slogan {
       display: none; }
-  /* line 144, ../sass/zhuanqianhua/_site.scss */
+  /* line 155, ../sass/zhuanqianhua/_site.scss */
   .fixed-nav li a {
     color: #666 !important; }
-  /* line 148, ../sass/zhuanqianhua/_site.scss */
+  /* line 159, ../sass/zhuanqianhua/_site.scss */
   .fixed-nav li.with-btn a {
     color: #fff !important;
     border-radius: 50px;
@@ -9226,16 +9235,24 @@ body {
     padding-left: 20px;
     padding-right: 20px; }
 
-/* line 161, ../sass/zhuanqianhua/_site.scss */
+/* line 172, ../sass/zhuanqianhua/_site.scss */
+.logo {
+  border-radius: 20px; }
+
+/* line 175, ../sass/zhuanqianhua/_site.scss */
+.fixed-logo {
+  border-radius: 10px; }
+
+/* line 178, ../sass/zhuanqianhua/_site.scss */
 .zqh-header {
   background-image: url(../images/bg.jpg);
   background-size: cover;
   background-position: top;
   min-height: 100%; }
-  /* line 167, ../sass/zhuanqianhua/_site.scss */
+  /* line 184, ../sass/zhuanqianhua/_site.scss */
   .zqh-header footer {
     padding-top: 60px; }
-    /* line 169, ../sass/zhuanqianhua/_site.scss */
+    /* line 186, ../sass/zhuanqianhua/_site.scss */
     .zqh-header footer a {
       color: #fff;
       display: inline-block;
@@ -9244,21 +9261,21 @@ body {
       height: 50px;
       border-radius: 50%;
       border: 2px solid #fff; }
-  /* line 179, ../sass/zhuanqianhua/_site.scss */
+  /* line 196, ../sass/zhuanqianhua/_site.scss */
   .zqh-header .zqh-hd-wrap {
     position: relative; }
-  /* line 184, ../sass/zhuanqianhua/_site.scss */
+  /* line 201, ../sass/zhuanqianhua/_site.scss */
   .zqh-header .zqh-hd-intro {
     text-align: right;
     color: #fff; }
-    /* line 187, ../sass/zhuanqianhua/_site.scss */
+    /* line 204, ../sass/zhuanqianhua/_site.scss */
     .zqh-header .zqh-hd-intro h1 {
       margin-top: 50px;
       font-size: 52px;
       font-weight: 300;
       font-family: msyhl55658 !important;
       text-shadow: 0px 1px 1px #000; }
-    /* line 195, ../sass/zhuanqianhua/_site.scss */
+    /* line 212, ../sass/zhuanqianhua/_site.scss */
     .zqh-header .zqh-hd-intro .zqh-hd-download {
       position: absolute;
       right: 0;
@@ -9270,10 +9287,10 @@ body {
       border: none;
       top: 214px; }
 
-/* line 211, ../sass/zhuanqianhua/_site.scss */
+/* line 228, ../sass/zhuanqianhua/_site.scss */
 #section1 {
   background-image: url(../images/tiny_grid.png); }
-  /* line 214, ../sass/zhuanqianhua/_site.scss */
+  /* line 231, ../sass/zhuanqianhua/_site.scss */
   #section1 .slide .feature-main {
     left: 50%;
     top: 50%;
@@ -9282,11 +9299,27 @@ body {
     height: 437px;
     margin-left: -400px;
     margin-top: -218px; }
-    /* line 222, ../sass/zhuanqianhua/_site.scss */
+    /* line 239, ../sass/zhuanqianhua/_site.scss */
+    #section1 .slide .feature-main .fe-title {
+      text-align: left;
+      margin-left: 350px; }
+      /* line 243, ../sass/zhuanqianhua/_site.scss */
+      #section1 .slide .feature-main .fe-title .ribbon {
+        padding-top: 15px; }
+    /* line 248, ../sass/zhuanqianhua/_site.scss */
+    #section1 .slide .feature-main .fe-icons, #section1 .slide .feature-main .weibo-topic {
+      width: 600px;
+      margin-left: 307px; }
+    /* line 253, ../sass/zhuanqianhua/_site.scss */
+    #section1 .slide .feature-main .weibo-topic {
+      height: 400px;
+      overflow: hidden; }
+    /* line 257, ../sass/zhuanqianhua/_site.scss */
     #section1 .slide .feature-main .fe-icon {
       padding: 0;
       margin-right: -1000px;
       margin-bottom: -1000px;
+      border-radius: 50%;
       -webkit-transition: all 2s 0.5s;
       -webkit-transition-delay: ease-out;
       -moz-transition: all 2s 0.5s ease-out;
@@ -9297,7 +9330,7 @@ body {
       -ms-transform: scale(2, 2);
       -o-transform: scale(2, 2);
       transform: scale(2, 2); }
-      /* line 228, ../sass/zhuanqianhua/_site.scss */
+      /* line 264, ../sass/zhuanqianhua/_site.scss */
       #section1 .slide .feature-main .fe-icon.act {
         padding: 20px;
         margin-right: 10px;
@@ -9307,9 +9340,15 @@ body {
         -ms-transform: scale(1, 1);
         -o-transform: scale(1, 1);
         transform: scale(1, 1); }
-    /* line 235, ../sass/zhuanqianhua/_site.scss */
+      /* line 270, ../sass/zhuanqianhua/_site.scss */
+      #section1 .slide .feature-main .fe-icon:hover {
+        border-radius: 50%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+    /* line 275, ../sass/zhuanqianhua/_site.scss */
     #section1 .slide .feature-main .feature-intro {
-      padding-top: 65px;
       margin-left: -500px;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
       opacity: 0;
@@ -9318,46 +9357,55 @@ body {
       -moz-transition: all 0.7s 1s ease-out;
       -o-transition: all 0.7s 1s ease-out;
       transition: all 0.7s 1s ease-out; }
-      /* line 240, ../sass/zhuanqianhua/_site.scss */
+      /* line 279, ../sass/zhuanqianhua/_site.scss */
       #section1 .slide .feature-main .feature-intro.act {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
         margin-left: 10px; }
-    /* line 246, ../sass/zhuanqianhua/_site.scss */
+    /* line 285, ../sass/zhuanqianhua/_site.scss */
     #section1 .slide .feature-main .fe-screen {
       position: absolute;
       margin-top: -1900px;
+      border-radius: 35px;
       left: -75px; }
-      /* line 250, ../sass/zhuanqianhua/_site.scss */
+      /* line 290, ../sass/zhuanqianhua/_site.scss */
       #section1 .slide .feature-main .fe-screen.act {
         margin-top: 0px;
         left: -75px; }
 
-/* line 262, ../sass/zhuanqianhua/_site.scss */
+/* line 302, ../sass/zhuanqianhua/_site.scss */
 #section2 {
   background: url(../images/review-bg.png) no-repeat, url(../images/tiny_grid.png);
-  background-position: center 500px;
-  transition: background-position 1s ease; }
-  /* line 266, ../sass/zhuanqianhua/_site.scss */
+  background-position: center -1000px;
+  transition: all 1s ease; }
+  /* line 306, ../sass/zhuanqianhua/_site.scss */
   #section2.act {
     background-position: center center; }
-  /* line 270, ../sass/zhuanqianhua/_site.scss */
+  /* line 310, ../sass/zhuanqianhua/_site.scss */
   #section2 .review {
     width: 800px;
     height: 400px;
-    left: 50%;
+    left: 200%;
     margin-left: -400px;
     margin-top: -200px;
     position: relative;
-    top: 50%; }
-    /* line 278, ../sass/zhuanqianhua/_site.scss */
+    top: 50%;
+    -webkit-transition: all 0.5s 1s;
+    -webkit-transition-delay: ease;
+    -moz-transition: all 0.5s 1s ease;
+    -o-transition: all 0.5s 1s ease;
+    transition: all 0.5s 1s ease; }
+    /* line 319, ../sass/zhuanqianhua/_site.scss */
+    #section2 .review.act {
+      left: 50%; }
+    /* line 322, ../sass/zhuanqianhua/_site.scss */
     #section2 .review h2 {
       color: #fff; }
-    /* line 281, ../sass/zhuanqianhua/_site.scss */
+    /* line 325, ../sass/zhuanqianhua/_site.scss */
     #section2 .review > img {
       width: 90px;
       height: 90px; }
-    /* line 285, ../sass/zhuanqianhua/_site.scss */
+    /* line 329, ../sass/zhuanqianhua/_site.scss */
     #section2 .review blockquote {
       background: none repeat scroll 0 0 #fff;
       border: medium none;
@@ -9367,7 +9415,7 @@ body {
       padding: 30px;
       position: relative;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); }
-      /* line 295, ../sass/zhuanqianhua/_site.scss */
+      /* line 339, ../sass/zhuanqianhua/_site.scss */
       #section2 .review blockquote:before {
         border-bottom: 10px solid transparent;
         border-right: 10px solid #fff;
@@ -9379,44 +9427,48 @@ body {
         width: 0; }
 
 @keyframes mymove {
-  /* line 313, ../sass/zhuanqianhua/_site.scss */
+  /* line 357, ../sass/zhuanqianhua/_site.scss */
   100% {
     background-position: -2000px -2000px; } }
 
 @-webkit-keyframes mymove {
-  /* line 320, ../sass/zhuanqianhua/_site.scss */
+  /* line 364, ../sass/zhuanqianhua/_site.scss */
   100% {
     background-position: -2000px -2000px; } }
 
-/* line 325, ../sass/zhuanqianhua/_site.scss */
+/* line 369, ../sass/zhuanqianhua/_site.scss */
 #Z_Download {
   background-image: url(../images/stardust.png);
   animation: mymove 60s infinite linear;
   -webkit-animation: mymove 60s infinite linear;
   /*Safari and Chrome*/
   color: #fff; }
-  /* line 331, ../sass/zhuanqianhua/_site.scss */
+  /* line 375, ../sass/zhuanqianhua/_site.scss */
   #Z_Download .download-links .download-nums {
     position: absolute;
     bottom: 0px;
     text-align: center;
     width: 100%;
     background: url(../images/earth.png) center bottom no-repeat;
-    height: 223px; }
-    /* line 338, ../sass/zhuanqianhua/_site.scss */
+    height: 223px;
+    background-size: cover; }
+    /* line 383, ../sass/zhuanqianhua/_site.scss */
     #Z_Download .download-links .download-nums p {
-      margin-top: 100px;
+      margin-top: 130px;
       font-size: 20px;
       color: rgba(255, 255, 255, 0.3); }
-      /* line 342, ../sass/zhuanqianhua/_site.scss */
+      /* line 387, ../sass/zhuanqianhua/_site.scss */
       #Z_Download .download-links .download-nums p strong {
         font-size: 50px; }
-  /* line 347, ../sass/zhuanqianhua/_site.scss */
+  /* line 392, ../sass/zhuanqianhua/_site.scss */
   #Z_Download .download-links .satellite {
     position: absolute;
     bottom: 220px;
     right: 0; }
-  /* line 352, ../sass/zhuanqianhua/_site.scss */
+    /* line 397, ../sass/zhuanqianhua/_site.scss */
+    #Z_Download .download-links .satellite img:hover {
+      box-shadow: none; }
+  /* line 402, ../sass/zhuanqianhua/_site.scss */
   #Z_Download .download-links .download-wrap {
     position: absolute;
     top: -500px;
@@ -9426,10 +9478,10 @@ body {
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s; }
-    /* line 358, ../sass/zhuanqianhua/_site.scss */
+    /* line 408, ../sass/zhuanqianhua/_site.scss */
     #Z_Download .download-links .download-wrap.act {
       top: 30%; }
-  /* line 362, ../sass/zhuanqianhua/_site.scss */
+  /* line 412, ../sass/zhuanqianhua/_site.scss */
   #Z_Download .download-links .btn {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -9440,49 +9492,65 @@ body {
     display: block;
     top: 30%;
     margin-top: 200px; }
-    /* line 369, ../sass/zhuanqianhua/_site.scss */
+    /* line 419, ../sass/zhuanqianhua/_site.scss */
     #Z_Download .download-links .btn.left {
       left: -300px; }
-      /* line 371, ../sass/zhuanqianhua/_site.scss */
+      /* line 421, ../sass/zhuanqianhua/_site.scss */
       #Z_Download .download-links .btn.left.act {
         left: 50%;
         margin-left: -150px; }
-    /* line 376, ../sass/zhuanqianhua/_site.scss */
+    /* line 426, ../sass/zhuanqianhua/_site.scss */
     #Z_Download .download-links .btn.right {
       right: -300px;
       margin-top: 300px; }
-      /* line 379, ../sass/zhuanqianhua/_site.scss */
+      /* line 429, ../sass/zhuanqianhua/_site.scss */
       #Z_Download .download-links .btn.right.act {
         right: 50%;
         margin-right: -150px; }
 
-/* line 390, ../sass/zhuanqianhua/_site.scss */
+/* line 440, ../sass/zhuanqianhua/_site.scss */
 .promotion {
   background: url(../images/xiaohuoban_aero.jpg) center center no-repeat; }
-  /* line 392, ../sass/zhuanqianhua/_site.scss */
+  /* line 442, ../sass/zhuanqianhua/_site.scss */
   .promotion .promo-bg {
     width: 100%;
     height: 100%;
-    background: url(../images/pattern.png);
-    transition: all 20s ease; }
-  /* line 402, ../sass/zhuanqianhua/_site.scss */
+    background: url(../images/pattern.png); }
+  /* line 447, ../sass/zhuanqianhua/_site.scss */
   .promotion .main {
     position: absolute;
     width: 1000px;
     height: 400px;
-    top: 50%;
+    top: 100%;
     left: 50%;
     margin-top: -200px;
     margin-left: -500px;
-    color: #fff; }
-    /* line 411, ../sass/zhuanqianhua/_site.scss */
+    color: #fff;
+    -webkit-transform: scale(5, 5);
+    -moz-transform: scale(5, 5);
+    -ms-transform: scale(5, 5);
+    -o-transform: scale(5, 5);
+    transform: scale(5, 5);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+    /* line 458, ../sass/zhuanqianhua/_site.scss */
+    .promotion .main.act {
+      -webkit-transform: scale(1, 1);
+      -moz-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      transform: scale(1, 1);
+      top: 50%; }
+    /* line 462, ../sass/zhuanqianhua/_site.scss */
     .promotion .main h2 {
       color: #fff !important; }
-    /* line 414, ../sass/zhuanqianhua/_site.scss */
+    /* line 465, ../sass/zhuanqianhua/_site.scss */
     .promotion .main .input-group-lg {
       width: 600px;
       margin-left: 200px; }
-    /* line 418, ../sass/zhuanqianhua/_site.scss */
+    /* line 469, ../sass/zhuanqianhua/_site.scss */
     .promotion .main .promo-well {
       background: rgba(0, 0, 0, 0.3);
       width: 600px;
@@ -9492,23 +9560,23 @@ body {
       margin-top: 25px;
       border: 1px solid rgba(199, 199, 199, 0.5);
       font-size: 16px !important; }
-      /* line 427, ../sass/zhuanqianhua/_site.scss */
+      /* line 478, ../sass/zhuanqianhua/_site.scss */
       .promotion .main .promo-well:hover {
         background: rgba(0, 0, 0, 0.6); }
 
-/* line 436, ../sass/zhuanqianhua/_site.scss */
+/* line 487, ../sass/zhuanqianhua/_site.scss */
 #section5 {
   background: url(../images/bg-light.jpg); }
 
-/* line 439, ../sass/zhuanqianhua/_site.scss */
+/* line 490, ../sass/zhuanqianhua/_site.scss */
 #Z_AboutUs {
   padding: 120px 0 30px;
   transition: all 1s ease; }
-  /* line 458, ../sass/zhuanqianhua/_site.scss */
+  /* line 509, ../sass/zhuanqianhua/_site.scss */
   #Z_AboutUs .zqh-about-logo {
     padding: 100px; }
 
-/* line 464, ../sass/zhuanqianhua/_site.scss */
+/* line 515, ../sass/zhuanqianhua/_site.scss */
 .zqh-footer {
   background: url(../images/bg-dark.png);
   color: #fff;
@@ -9516,58 +9584,58 @@ body {
   margin-right: -10px;
   border-top: 3px #f6484c solid;
   box-shadow: inset 0px 0px 15px rgba(254, 80, 77, 0.9); }
-  /* line 472, ../sass/zhuanqianhua/_site.scss */
+  /* line 523, ../sass/zhuanqianhua/_site.scss */
   .zqh-footer .zqh-top10 .badge {
     background-color: rgba(254, 80, 77, 0.9); }
-  /* line 476, ../sass/zhuanqianhua/_site.scss */
+  /* line 527, ../sass/zhuanqianhua/_site.scss */
   .zqh-footer .zqh-top10 h4 small {
     float: right; }
 
-/* line 486, ../sass/zhuanqianhua/_site.scss */
+/* line 537, ../sass/zhuanqianhua/_site.scss */
 .zqh-f-link a {
   padding: 5px;
   width: 120px;
   color: #666;
   display: inline-block; }
 
-/* line 494, ../sass/zhuanqianhua/_site.scss */
+/* line 545, ../sass/zhuanqianhua/_site.scss */
 #Z_FooterMain {
   padding: 15px; }
-  /* line 495, ../sass/zhuanqianhua/_site.scss */
+  /* line 546, ../sass/zhuanqianhua/_site.scss */
   #Z_FooterMain > div {
     height: 200px;
     border: #222 1px solid; }
-    /* line 498, ../sass/zhuanqianhua/_site.scss */
+    /* line 549, ../sass/zhuanqianhua/_site.scss */
     #Z_FooterMain > div h3 {
       background: url(../images/pattern.png); }
-    /* line 501, ../sass/zhuanqianhua/_site.scss */
+    /* line 552, ../sass/zhuanqianhua/_site.scss */
     #Z_FooterMain > div a {
       color: #eee; }
-      /* line 503, ../sass/zhuanqianhua/_site.scss */
+      /* line 554, ../sass/zhuanqianhua/_site.scss */
       #Z_FooterMain > div a:hover, #Z_FooterMain > div a:active, #Z_FooterMain > div a:focus {
         border-radius: 3px;
         background-color: #f6484c;
         box-shadow: 0px 0px 15px rgba(254, 80, 77, 0.9); }
-  /* line 511, ../sass/zhuanqianhua/_site.scss */
+  /* line 562, ../sass/zhuanqianhua/_site.scss */
   #Z_FooterMain h3 {
     margin-bottom: 50px; }
-  /* line 515, ../sass/zhuanqianhua/_site.scss */
+  /* line 566, ../sass/zhuanqianhua/_site.scss */
   #Z_FooterMain .qr h3 {
     margin-bottom: 30px; }
-  /* line 518, ../sass/zhuanqianhua/_site.scss */
+  /* line 569, ../sass/zhuanqianhua/_site.scss */
   #Z_FooterMain .qr img {
     width: 90px; }
 
-/* line 524, ../sass/zhuanqianhua/_site.scss */
+/* line 575, ../sass/zhuanqianhua/_site.scss */
 #Z_FooterBottom {
   color: #666; }
-  /* line 526, ../sass/zhuanqianhua/_site.scss */
+  /* line 577, ../sass/zhuanqianhua/_site.scss */
   #Z_FooterBottom .zqh-copy {
     margin-top: 15px;
     border-top: 1px solid #222;
     padding: 15px 0; }
 
-/* line 535, ../sass/zhuanqianhua/_site.scss */
+/* line 586, ../sass/zhuanqianhua/_site.scss */
 #Z_SidebarPanel {
   position: fixed;
   z-index: 20;
@@ -9584,7 +9652,7 @@ body {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
-  /* line 548, ../sass/zhuanqianhua/_site.scss */
+  /* line 599, ../sass/zhuanqianhua/_site.scss */
   #Z_SidebarPanel .sidebar-panel-body {
     width: 320px;
     background: #000;
@@ -9595,12 +9663,12 @@ body {
     padding: 0;
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
     z-index: 50; }
-    /* line 558, ../sass/zhuanqianhua/_site.scss */
+    /* line 609, ../sass/zhuanqianhua/_site.scss */
     #Z_SidebarPanel .sidebar-panel-body iframe {
       width: 320px;
       height: 100%;
       border: none; }
-  /* line 564, ../sass/zhuanqianhua/_site.scss */
+  /* line 615, ../sass/zhuanqianhua/_site.scss */
   #Z_SidebarPanel > a {
     width: 50px;
     color: #999;
@@ -9608,25 +9676,25 @@ body {
     height: 50px;
     background: rgba(0, 0, 0, 0.1);
     margin-bottom: 1px; }
-    /* line 571, ../sass/zhuanqianhua/_site.scss */
+    /* line 622, ../sass/zhuanqianhua/_site.scss */
     #Z_SidebarPanel > a .badge {
       background-color: rgba(254, 80, 77, 0.9);
       position: absolute;
       left: 20px; }
 
-/* line 582, ../sass/zhuanqianhua/_site.scss */
+/* line 633, ../sass/zhuanqianhua/_site.scss */
 .controlArrow.prev {
   left: 80px !important; }
-/* line 585, ../sass/zhuanqianhua/_site.scss */
+/* line 636, ../sass/zhuanqianhua/_site.scss */
 .controlArrow.next {
   right: 80px !important; }
 
-/* line 591, ../sass/zhuanqianhua/_site.scss */
+/* line 642, ../sass/zhuanqianhua/_site.scss */
 #fullPage-nav span,
 .fullPage-slidesNav span {
   border-color: rgba(254, 80, 77, 0.9) !important; }
 
-/* line 596, ../sass/zhuanqianhua/_site.scss */
+/* line 647, ../sass/zhuanqianhua/_site.scss */
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
   background: #f6484c !important; }

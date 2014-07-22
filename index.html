@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns:wb=“http://open.weibo.com/wb”>
 <head>
     <meta charset="utf-8"/>
 
@@ -10,7 +10,9 @@
     <title>赚钱花</title>
     <meta name="description" content=""/>
     <meta name="generator" content="Studio 3 http://aptana.com/"/>
-    <meta name="author" content="zhao"/>
+    <meta name="author" content="being zhao"/>
+    <meta name="keywords" content="赚钱花，手机赚钱,中国第一手机赚钱,学生赚钱,安卓赚钱,苹果赚钱,网络赚钱,安卓手机赚钱,苹果手机赚钱,android手机赚钱,android赚钱,iPhone赚钱" />
+    <meta name="description" content="赚钱花，为泡橙科技出品的手机赚钱应用，分为iOS和安卓系统两个版本。其核心是打造一站式手机赚钱应用，让用户通过完成任务（下载体验软件等）、每日签到、邀请收徒等方式赚取现金奖励。并可以快捷地完成兑换提现等操作。让用户通过多种多样的方式，轻松获得收入。赚钱花是最靠谱的学生赚钱利器，白领赚钱利器。玩手机，用赚钱花，利用碎片时间轻松赚小钱。" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -86,7 +88,7 @@
                     }
                     //进入用户评价页面特效
                     if (index == 3) {
-                        $('#section2').addClass('act');
+                        $('#section2,.review').addClass('act');
                         $(".scroll-link").removeClass('active');
                         $(".scroll-link[data-index='3']").addClass('active');
                     }
@@ -100,8 +102,9 @@
                         //非下载页面，显示下载按钮
                         $('.scroll-link-down').show();
                     }
+                    //推广页面
                     if (index == 5) {
-                        $('.promo-bg').addClass('act');
+                        $('.main').addClass('act');
                         $(".scroll-link").removeClass('active');
                         $(".scroll-link[data-index='5']").addClass('active');
                     }
@@ -196,6 +199,7 @@
             })
         });
     </script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div id="Z_SidebarPanel">
@@ -214,8 +218,8 @@
 <nav id="Z_FixedNav" class="navbar fixed-nav">
     <div class="container">
         <div class="navbar-header zqh-navbar-hd">
-            <a href="#">
-                <img class="pull-left" alt="赚钱花" src="images/logo.png">
+            <a class="scroll-link" data-index="1"  href="#" >
+                <img class="pull-left fixed-logo" alt="赚钱花" src="images/logo.png">
 
                 <div class="pull-left text-center zqh-site-name">
                     <p class="name text-zqh">
@@ -257,8 +261,8 @@
         <nav id="Z_Navbar" class="navbar zqh-navbar">
             <div class="container">
                 <div id="Z_NavbarHd" class="navbar-header zqh-navbar-hd">
-                    <a href="#">
-                        <img class="pull-left" alt="赚钱花" src="images/logo.png">
+                    <a class="scroll-link" data-index="1"  href="http://www.zhuanqianhua.com">
+                        <img class="pull-left logo" alt="赚钱花" src="images/logo.png">
 
                         <div id="Z_SiteName" class="pull-left text-center zqh-site-name">
                             <p class="name text-zqh">
@@ -310,8 +314,11 @@
             <img class="pull-left fe-screen" src="images/exchange_screen.png" alt="赚钱花软件兑换页面截图"/>
 
             <div class="feature-intro">
-                <img class="fe-title" src="images/exchange-title.png" alt="兑换最快5分钟到账，安全快捷，支持支付宝、话费、Q币">
-
+                <div class="fe-title">
+                    <p class="label-primary ribbon"><span class="lead">兑换最快</span></p>
+                    <h2>最快<b>5</b>分钟到账</h2>
+                    <p class="lead">支持支付宝、话费、Q币，低门槛，1Q币起兑</p>
+                </div>
                 <p>
                     <img class="fe-icon" src="images/exchange_alipay.png" alt="支付宝">
                     <img class="fe-icon" src="images/exchange_fee.png" alt="话费">
@@ -323,14 +330,40 @@
     <div class="slide" id="feature2">
         <div class="feature-main">
             <img class="pull-left fe-screen" src="images/exchange_screen.png" alt="赚钱花软件兑换页面截图"/>
-
             <div class="feature-intro">
-                <img class="fe-title" src="images/exchange-title.png" alt="兑换最快5分钟到账，安全快捷，支持支付宝、话费、Q币">
+                <div class="fe-title">
+                    <p class="ribbon label-primary"><span class="lead">任务超多</span></p>
+                    <h2><b>200</b>多个合作伙伴</h2>
+                    <p class="lead">给你带来更多任务</p>
+                </div>
 
-                <p>
-                    <img class="fe-icon" src="images/exchange_alipay.png" alt="支付宝">
-                    <img class="fe-icon" src="images/exchange_fee.png" alt="话费">
-                    <img class="fe-icon" src="images/exchange_qb.png" alt="Q币">
+                <p class="fe-icons">
+                    <img class="fe-icon" src="images/task_anwo.png" alt="合作伙伴安沃">
+                    <img class="fe-icon" src="images/task_dianru.png" alt="合作伙伴点入">
+                    <img class="fe-icon" src="images/task_duomeng.png" alt="合作伙伴多盟">
+                    <img class="fe-icon" src="images/task_guomeng.png" alt="合作伙伴果盟">
+                    <img class="fe-icon" src="images/task_limei.png" alt="合作伙伴力美">
+                    <img class="fe-icon" src="images/task_midi.png" alt="合作伙伴米笛">
+                    <img class="fe-icon" src="images/task_wanpu.png" alt="合作伙伴万普">
+                    <img class="fe-icon" src="images/task_yijifen.png" alt="合作伙伴易积分">
+                    <img class="fe-icon" src="images/task_youmi.png" alt="合作伙伴有米">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="slide" id="feature2">
+        <div class="feature-main">
+            <img class="pull-left fe-screen" src="images/exchange_screen.png" alt="赚钱花软件兑换页面截图"/>
+            <div class="feature-intro">
+                <div class="fe-title">
+                    <p class="ribbon label-primary"><span class="lead">稳定可靠</span></p>
+                    <h2><b>2000</b>万用户的选择</h2>
+                    <p class="lead">最靠谱的手机赚钱软件</p>
+                </div>
+
+                <p class="weibo-topic">
+                    <wb:topic topmid="z8ClGsZa8" column="n" border="n" width="560" height="1190" tags="%E8%B5%9A%E9%92%B1%E8%8A%B1%E6%99%92%E5%8D%95" color="333333%2C16776960%2Cf6484c%2Ccccccc%2C333333%2Cfafeff%2C0078b6%2Ccccccc%2Ccccccc%2Ce9f4fb" language="zh_cn" version="base" appkey="1QeVPo" refer="y" footbar="y" url="%23" filter="n" ></wb:topic>
                 </p>
             </div>
         </div>

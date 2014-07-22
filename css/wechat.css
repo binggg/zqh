@@ -4930,7 +4930,7 @@ tbody.collapse.in {
     padding: 0.7em 0.7em 0.7em 30px;
     border-radius: 0px 4px 4px 0px;
     border-color: rgba(0, 0, 0, 0.15); }
-  /* line 112, ../sass/bootstrap/_labels.scss */
+  /* line 113, ../sass/bootstrap/_labels.scss */
   .label.ribbon:after, .ribbon.label-default:after, .ribbon.label-primary:after, .ribbon.label-success:after, .ribbon.label-info:after, .ribbon.label-warning:after, .ribbon.label-danger:after {
     position: absolute;
     content: "";
@@ -4944,7 +4944,7 @@ tbody.collapse.in {
     border-left: 0em solid transparent;
     width: 0em;
     height: 0em; }
-  /* line 135, ../sass/bootstrap/_labels.scss */
+  /* line 136, ../sass/bootstrap/_labels.scss */
   .label.top.attached, .top.attached.label-default, .top.attached.label-primary, .top.attached.label-success, .top.attached.label-info, .top.attached.label-warning, .top.attached.label-danger, .label.attached, .attached.label-default, .attached.label-primary, .attached.label-success, .attached.label-info, .attached.label-warning, .attached.label-danger {
     width: 100%;
     position: absolute;
@@ -4953,29 +4953,29 @@ tbody.collapse.in {
     left: 0em;
     padding: 0.75em 1em;
     border-radius: 4px 4px 0 0; }
-  /* line 145, ../sass/bootstrap/_labels.scss */
+  /* line 146, ../sass/bootstrap/_labels.scss */
   .label.bottom.attached, .bottom.attached.label-default, .bottom.attached.label-primary, .bottom.attached.label-success, .bottom.attached.label-info, .bottom.attached.label-warning, .bottom.attached.label-danger {
     top: auto;
     bottom: 0em;
     border-radius: 0em 0em 4px 4px; }
-  /* line 151, ../sass/bootstrap/_labels.scss */
+  /* line 152, ../sass/bootstrap/_labels.scss */
   .label.top.left.attached, .top.left.attached.label-default, .top.left.attached.label-primary, .top.left.attached.label-success, .top.left.attached.label-info, .top.left.attached.label-warning, .top.left.attached.label-danger {
     width: auto;
     margin-top: 0em !important;
     border-radius: 4px 0em 4px 0em; }
-  /* line 157, ../sass/bootstrap/_labels.scss */
+  /* line 158, ../sass/bootstrap/_labels.scss */
   .label.top.right.attached, .top.right.attached.label-default, .top.right.attached.label-primary, .top.right.attached.label-success, .top.right.attached.label-info, .top.right.attached.label-warning, .top.right.attached.label-danger {
     width: auto;
     left: auto;
     right: 0em;
     border-radius: 0em 4px 0em 4px; }
-  /* line 163, ../sass/bootstrap/_labels.scss */
+  /* line 164, ../sass/bootstrap/_labels.scss */
   .label.bottom.left.attached, .bottom.left.attached.label-default, .bottom.left.attached.label-primary, .bottom.left.attached.label-success, .bottom.left.attached.label-info, .bottom.left.attached.label-warning, .bottom.left.attached.label-danger {
     width: auto;
     top: auto;
     bottom: 0em;
     border-radius: 0 4px 0 4px; }
-  /* line 169, ../sass/bootstrap/_labels.scss */
+  /* line 170, ../sass/bootstrap/_labels.scss */
   .label.bottom.right.attached, .bottom.right.attached.label-default, .bottom.right.attached.label-primary, .bottom.right.attached.label-success, .bottom.right.attached.label-info, .bottom.right.attached.label-warning, .bottom.right.attached.label-danger {
     top: auto;
     bottom: 0em;
@@ -4983,7 +4983,7 @@ tbody.collapse.in {
     right: 0em;
     width: auto;
     border-radius: 4px 0 4px 0; }
-  /* line 182, ../sass/bootstrap/_labels.scss */
+  /* line 183, ../sass/bootstrap/_labels.scss */
   .label.corner, .corner.label-default, .corner.label-primary, .corner.label-success, .corner.label-info, .corner.label-warning, .corner.label-danger {
     background-color: transparent;
     position: absolute;
@@ -4999,7 +4999,7 @@ tbody.collapse.in {
     -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
     /* Left Corner */ }
-    /* line 196, ../sass/bootstrap/_labels.scss */
+    /* line 197, ../sass/bootstrap/_labels.scss */
     .label.corner:after, .corner.label-default:after, .corner.label-primary:after, .corner.label-success:after, .corner.label-info:after, .corner.label-warning:after, .corner.label-danger:after {
       position: absolute;
       content: "";
@@ -5016,11 +5016,11 @@ tbody.collapse.in {
       -webkit-transition: border-color 0.2s ease;
       -o-transition: border-color 0.2s ease;
       transition: border-color 0.2s ease; }
-    /* line 216, ../sass/bootstrap/_labels.scss */
+    /* line 217, ../sass/bootstrap/_labels.scss */
     .label.corner .fa, .corner.label-default .fa, .corner.label-primary .fa, .corner.label-success .fa, .corner.label-info .fa, .corner.label-warning .fa, .corner.label-danger .fa {
       font-size: 0.875em;
       margin: 0.5em 0em 0em 1.25em; }
-    /* line 220, ../sass/bootstrap/_labels.scss */
+    /* line 221, ../sass/bootstrap/_labels.scss */
     .label.corner .text, .corner.label-default .text, .corner.label-primary .text, .corner.label-success .text, .corner.label-info .text, .corner.label-warning .text, .corner.label-danger .text {
       display: inline-block;
       font-weight: bold;
@@ -5032,21 +5032,21 @@ tbody.collapse.in {
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg); }
-    /* line 233, ../sass/bootstrap/_labels.scss */
+    /* line 234, ../sass/bootstrap/_labels.scss */
     .label.corner.left, .corner.left.label-default, .corner.left.label-primary, .corner.left.label-success, .corner.left.label-info, .corner.left.label-warning, .corner.left.label-danger, .label.corner.left:after, .corner.left.label-default:after, .corner.left.label-primary:after, .corner.left.label-success:after, .corner.left.label-info:after, .corner.left.label-warning:after, .corner.left.label-danger:after {
       right: auto;
       left: 0em; }
-    /* line 237, ../sass/bootstrap/_labels.scss */
+    /* line 238, ../sass/bootstrap/_labels.scss */
     .label.corner.left:after, .corner.left.label-default:after, .corner.left.label-primary:after, .corner.left.label-success:after, .corner.left.label-info:after, .corner.left.label-warning:after, .corner.left.label-danger:after {
       border-top: 3em solid transparent;
       border-right: 3em solid transparent;
       border-bottom: 0em solid transparent;
       border-left: 0em solid transparent;
       border-top-color: inherit; }
-    /* line 244, ../sass/bootstrap/_labels.scss */
+    /* line 245, ../sass/bootstrap/_labels.scss */
     .label.corner.left .fa, .corner.left.label-default .fa, .corner.left.label-primary .fa, .corner.left.label-success .fa, .corner.left.label-info .fa, .corner.left.label-warning .fa, .corner.left.label-danger .fa {
       margin: 0.5em 0em 0em -1em; }
-    /* line 247, ../sass/bootstrap/_labels.scss */
+    /* line 248, ../sass/bootstrap/_labels.scss */
     .label.corner.left .text, .corner.left.label-default .text, .corner.left.label-primary .text, .corner.left.label-success .text, .corner.left.label-info .text, .corner.left.label-warning .text, .corner.left.label-danger .text {
       margin: 0.5em 0em 0em -1em;
       -webkit-transform: rotate(-45deg);
@@ -5054,13 +5054,13 @@ tbody.collapse.in {
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
-/* line 260, ../sass/bootstrap/_labels.scss */
+/* line 261, ../sass/bootstrap/_labels.scss */
 a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hover, a.label-info:hover, a.label-warning:hover, a.label-danger:hover, a.label:focus, a.label-default:focus, a.label-primary:focus, a.label-success:focus, a.label-info:focus, a.label-warning:focus, a.label-danger:focus {
   color: white;
   text-decoration: none;
   cursor: pointer; }
 
-/* line 272, ../sass/bootstrap/_labels.scss */
+/* line 273, ../sass/bootstrap/_labels.scss */
 .label-default {
   background-color: #999999;
   border-color: gray !important; }
@@ -5068,7 +5068,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-default[href]:hover, .label-default[href]:focus {
     background-color: gray; }
 
-/* line 277, ../sass/bootstrap/_labels.scss */
+/* line 278, ../sass/bootstrap/_labels.scss */
 .label-primary {
   background-color: #44b549;
   border-color: #36903a !important; }
@@ -5076,7 +5076,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-primary[href]:hover, .label-primary[href]:focus {
     background-color: #36903a; }
 
-/* line 282, ../sass/bootstrap/_labels.scss */
+/* line 283, ../sass/bootstrap/_labels.scss */
 .label-success {
   background-color: #44b549;
   border-color: #36903a !important; }
@@ -5084,7 +5084,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-success[href]:hover, .label-success[href]:focus {
     background-color: #36903a; }
 
-/* line 287, ../sass/bootstrap/_labels.scss */
+/* line 288, ../sass/bootstrap/_labels.scss */
 .label-info {
   background-color: #7cbae5;
   border-color: #51a4dd !important; }
@@ -5092,7 +5092,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-info[href]:hover, .label-info[href]:focus {
     background-color: #51a4dd; }
 
-/* line 292, ../sass/bootstrap/_labels.scss */
+/* line 293, ../sass/bootstrap/_labels.scss */
 .label-warning {
   background-color: #f0ad4e;
   border-color: #ec971f !important; }
@@ -5100,7 +5100,7 @@ a.label:hover, a.label-default:hover, a.label-primary:hover, a.label-success:hov
   .label-warning[href]:hover, .label-warning[href]:focus {
     background-color: #ec971f; }
 
-/* line 297, ../sass/bootstrap/_labels.scss */
+/* line 298, ../sass/bootstrap/_labels.scss */
 .label-danger {
   background-color: #e43b3e;
   border-color: #cf1d20 !important; }
