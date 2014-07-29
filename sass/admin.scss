@@ -6,7 +6,7 @@
 
 
 // Core variables and mixins
-@import "wechat/variables";
+@import "admin/variables";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
@@ -74,4 +74,4 @@
 
 
 // site css
-@import "wechat/site";
+@import "admin/site";

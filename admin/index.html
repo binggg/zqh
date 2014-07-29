@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>赚钱花管理中心</title>
+    <link rel="stylesheet" href="../css/admin.css"/>
+    <link rel="stylesheet" href="admin.css"/>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/echarts-plain.js"></script>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="logo" src="../images/logo.png" alt="赚钱花"/><a class="navbar-brand" href="#">赚钱花 <small>管理中心</small></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">概况</a></li>
+                <li><a href="#">收入</a></li>
+                <li><a href="#">用户</a></li>
+                <li><a href="#">支出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <h3>概况</h3>
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+            <h3>收益</h3>
+            <ul class="nav nav-sidebar">
+                <li class=""><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+            <h3>用户</h3>
+            <ul class="nav nav-sidebar">
+                <li class=""><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+            <h3>支出</h3>
+            <ul class="nav nav-sidebar">
+                <li class=""><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+            <h3>支出</h3>
+            <ul class="nav nav-sidebar">
+                <li class=""><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+            <h3>支出</h3>
+            <ul class="nav nav-sidebar">
+                <li class=""><a href="#">每日概况</a></li>
+                <li><a href="#">经营概况</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <p><span><a class="btn btn-default btn-xs">&lt;</a> <b>2014-07-29</b> </span> <a class="btn btn-default btn-xs">&gt;</a></p>
+            <h3>关键指标</h3>
+            <div id="keyDatas" class="panel panel-default row">
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-12 hidden-sm hidden-xs key-chart">
+                    <div class="panel-body" id="keyChart" style="height:300px;">
+
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts图表
+                    var myChart = echarts.init(document.getElementById('keyChart'));
+
+                    option = {
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data:['苹果收益','安卓收益','总收益']
+                        },
+                        toolbox: {
+                            show : true,
+                            feature : {
+                                mark : {show: true},
+                                dataView : {show: true, readOnly: false},
+                                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                                restore : {show: true},
+                                saveAsImage : {show: true}
+                            }
+                        },
+                        calculable : true,
+                        xAxis : [
+                            {
+                                type : 'category',
+                                boundaryGap : false,
+                                data : ['7-22','7-23','周三','周四','周五','周六','周日']
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value'
+                            }
+                        ],
+                        series : [
+                            {
+                                name:'总收益',
+                                type:'line',
+                                stack: '总量',
+                                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                                data:[120, 132, 101, 134, 90, 230, 210]
+                            },
+                            {
+                                name:'安卓收益',
+                                type:'line',
+                                stack: '总量',
+                                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                                data:[220, 182, 191, 234, 290, 330, 310]
+                            },
+                            {
+                                name:'苹果收益',
+                                type:'line',
+                                stack: '总量',
+                                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                                data:[150, 232, 201, 154, 190, 330, 410]
+                            }
+                        ]
+                    };
+
+
+                    // 为echarts对象加载数据
+                    myChart.setOption(option);
+                </script>
+            </div>
+            <h3>推广数据</h3>
+            <div id="keyDatas" class="panel panel-default row">
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+            </div>
+            <h3>用户数据</h3>
+            <div id="keyDatas" class="panel panel-default row">
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+            </div>
+            <div id="keyDatas" class="panel panel-default row">
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">收益</div>
+                    <div class="panel-body">
+                        <h1>9999</h1>
+                        <p>安卓：4444</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--<h1 class="page-header">Dashboard</h1>-->
+            <!--<div class="row placeholders">-->
+                <!--<div class="col-xs-6 col-sm-3 placeholder">-->
+                    <!--<img data-src="holder.js/200x200/auto/sky" class="img-responsive"-->
+                         <!--alt="Generic placeholder thumbnail">-->
+                    <!--<h4>Label</h4>-->
+                    <!--<span class="text-muted">Something else</span>-->
+                <!--</div>-->
+                <!--<div class="col-xs-6 col-sm-3 placeholder">-->
+                    <!--<img data-src="holder.js/200x200/auto/vine" class="img-responsive"-->
+                         <!--alt="Generic placeholder thumbnail">-->
+                    <!--<h4>Label</h4>-->
+                    <!--<span class="text-muted">Something else</span>-->
+                <!--</div>-->
+                <!--<div class="col-xs-6 col-sm-3 placeholder">-->
+                    <!--<img data-src="holder.js/200x200/auto/sky" class="img-responsive"-->
+                         <!--alt="Generic placeholder thumbnail">-->
+                    <!--<h4>Label</h4>-->
+                    <!--<span class="text-muted">Something else</span>-->
+                <!--</div>-->
+                <!--<div class="col-xs-6 col-sm-3 placeholder">-->
+                    <!--<img data-src="holder.js/200x200/auto/vine" class="img-responsive"-->
+                         <!--alt="Generic placeholder thumbnail">-->
+                    <!--<h4>Label</h4>-->
+                    <!--<span class="text-muted">Something else</span>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<h2 class="sub-header">Section title</h2>-->
+
+            <!--<div class="table-responsive">-->
+                <!--<table class="table table-striped">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>#</th>-->
+                        <!--<th>Header</th>-->
+                        <!--<th>Header</th>-->
+                        <!--<th>Header</th>-->
+                        <!--<th>Header</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td>1,001</td>-->
+                        <!--<td>Lorem</td>-->
+                        <!--<td>ipsum</td>-->
+                        <!--<td>dolor</td>-->
+                        <!--<td>sit</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,002</td>-->
+                        <!--<td>amet</td>-->
+                        <!--<td>consectetur</td>-->
+                        <!--<td>adipiscing</td>-->
+                        <!--<td>elit</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,003</td>-->
+                        <!--<td>Integer</td>-->
+                        <!--<td>nec</td>-->
+                        <!--<td>odio</td>-->
+                        <!--<td>Praesent</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,003</td>-->
+                        <!--<td>libero</td>-->
+                        <!--<td>Sed</td>-->
+                        <!--<td>cursus</td>-->
+                        <!--<td>ante</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,004</td>-->
+                        <!--<td>dapibus</td>-->
+                        <!--<td>diam</td>-->
+                        <!--<td>Sed</td>-->
+                        <!--<td>nisi</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,005</td>-->
+                        <!--<td>Nulla</td>-->
+                        <!--<td>quis</td>-->
+                        <!--<td>sem</td>-->
+                        <!--<td>at</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,006</td>-->
+                        <!--<td>nibh</td>-->
+                        <!--<td>elementum</td>-->
+                        <!--<td>imperdiet</td>-->
+                        <!--<td>Duis</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,007</td>-->
+                        <!--<td>sagittis</td>-->
+                        <!--<td>ipsum</td>-->
+                        <!--<td>Praesent</td>-->
+                        <!--<td>mauris</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,008</td>-->
+                        <!--<td>Fusce</td>-->
+                        <!--<td>nec</td>-->
+                        <!--<td>tellus</td>-->
+                        <!--<td>sed</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,009</td>-->
+                        <!--<td>augue</td>-->
+                        <!--<td>semper</td>-->
+                        <!--<td>porta</td>-->
+                        <!--<td>Mauris</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,010</td>-->
+                        <!--<td>massa</td>-->
+                        <!--<td>Vestibulum</td>-->
+                        <!--<td>lacinia</td>-->
+                        <!--<td>arcu</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,011</td>-->
+                        <!--<td>eget</td>-->
+                        <!--<td>nulla</td>-->
+                        <!--<td>Class</td>-->
+                        <!--<td>aptent</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,012</td>-->
+                        <!--<td>taciti</td>-->
+                        <!--<td>sociosqu</td>-->
+                        <!--<td>ad</td>-->
+                        <!--<td>litora</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,013</td>-->
+                        <!--<td>torquent</td>-->
+                        <!--<td>per</td>-->
+                        <!--<td>conubia</td>-->
+                        <!--<td>nostra</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,014</td>-->
+                        <!--<td>per</td>-->
+                        <!--<td>inceptos</td>-->
+                        <!--<td>himenaeos</td>-->
+                        <!--<td>Curabitur</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1,015</td>-->
+                        <!--<td>sodales</td>-->
+                        <!--<td>ligula</td>-->
+                        <!--<td>in</td>-->
+                        <!--<td>libero</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
