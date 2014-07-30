@@ -2,6 +2,9 @@
 <html>
 <head lang="zh-CN">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
     <title>赚钱花管理中心</title>
     <link rel="stylesheet" href="../css/admin.css"/>
     <link rel="stylesheet" href="admin.css"/>
@@ -70,55 +73,45 @@
             <p><span><a class="btn btn-default btn-xs">&lt;</a> <b>2014-07-29</b> </span> <a class="btn btn-default btn-xs">&gt;</a></p>
             <h3>关键指标</h3>
             <div id="keyDatas" class="panel panel-default row">
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                <div class="col-md-3 col-xs-6 key-data">
                     <div class="top left attached label-default">收益</div>
+                    <div class=""></div>
                     <div class="panel-body">
                         <h1>9999</h1>
                         <p>安卓：4444</p>
                         <p>ios：5555</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
+                <div class="col-md-3 col-xs-6 key-data">
+                    <div class="top left attached label-default">支出</div>
+                    <div class="panel-body">
+                        <h1>5499</h1>
+                        <p>任务:1496.89</p>
+                        <p>签到:3248.13</p>
+                        <p>注册:1797.40</p>
+                        <p>推广：1000.40</p>
+                        <p>师徒：1000.40</p>
+                        ...
+                        （饼图）
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 key-data">
+                    <div class="top left attached label-default">账户余额</div>
+                    <div class="panel-body">
+                        <h1>5999</h1>
+                        <p>安卓：5555</p>
+                        <p>ios：5555</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 key-data">
+                    <div class="top left attached label-default">提现</div>
                     <div class="panel-body">
                         <h1>9999</h1>
                         <p>安卓：4444</p>
                         <p>ios：5555</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
-                    <div class="panel-body">
-                        <h1>9999</h1>
-                        <p>安卓：4444</p>
-                        <p>ios：5555</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
-                    <div class="panel-body">
-                        <h1>9999</h1>
-                        <p>安卓：4444</p>
-                        <p>ios：5555</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
-                    <div class="panel-body">
-                        <h1>9999</h1>
-                        <p>安卓：4444</p>
-                        <p>ios：5555</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
-                    <div class="panel-body">
-                        <h1>9999</h1>
-                        <p>安卓：4444</p>
-                        <p>ios：5555</p>
-                    </div>
-                </div>
-                <div class="col-md-12 hidden-sm hidden-xs key-chart">
+                <div class="col-sm-12 key-chart">
                     <div class="panel-body" id="keyChart" style="height:300px;">
 
                     </div>
@@ -187,18 +180,50 @@
                     myChart.setOption(option);
                 </script>
             </div>
-            <h3>推广数据</h3>
+            <h3>推广经营指标</h3>
             <div id="keyDatas" class="panel panel-default row">
                 <div class="col-md-2 col-sm-4 col-xs-6 key-data">
-                    <div class="top left attached label-default">收益</div>
+                    <div class="top left attached label-default">新增用户</div>
                     <div class="panel-body">
-                        <h1>9999</h1>
-                        <p>安卓：4444</p>
-                        <p>ios：5555</p>
+                        <h1>800</h1>
+                        <p>安卓：400</p>
+                        <p>ios：400</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">累计用户</div>
+                    <div class="panel-body">
+                        <h1>800000</h1>
+                        <p>安卓：400000</p>
+                        <p>ios：400000</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">已完成任务</div>
+                    <div class="panel-body">
+                        <h1>800</h1>
+                        <p>安卓：400</p>
+                        <p>ios：400</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">累计完成任务</div>
+                    <div class="panel-body">
+                        <h1>80000</h1>
+                        <p>安卓：40000</p>
+                        <p>ios：40000</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 key-data">
+                    <div class="top left attached label-default">兑换次数</div>
+                    <div class="panel-body">
+                        <h1>8000</h1>
+                        <p>安卓：4000</p>
+                        <p>ios：4000</p>
                     </div>
                 </div>
             </div>
-            <h3>用户数据</h3>
+            <h3>平台火爆指标</h3>
             <div id="keyDatas" class="panel panel-default row">
                 <div class="col-md-2 col-sm-4 col-xs-6 key-data">
                     <div class="top left attached label-default">收益</div>
